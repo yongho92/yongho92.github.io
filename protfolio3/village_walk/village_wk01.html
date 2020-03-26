@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<HTML>
+ <HEAD>
+  <TITLE> 청춘발산마을 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="../web/css/common_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/sub_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/tablet_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/moblie_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/jplayer.blue.monday.min_2018.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="../web/css/jquery.bxslider.css" rel="stylesheet">
+  <link href="../web/font/noto-sans-korean-webfont-master/css/noto-sans-korean.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/seoulhangang/css/seoulhangang.css" type="text/css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../web/js/jquery.jplayer.min_2018.js"></script>
+  <script src="../web/js/jquery.bxslider.min.js"></script>
+ </HEAD>
+
+ <BODY>
+
+<script>
+	/*var idx = $('.i_list li a').index(this) ; 
+
+	$(document).ready(function(){
+		$('.i_list li a').mouseenter(function(){
+			$(this).addClass('on');
+		});
+		$('.i_list li a').mouseleave(function(){
+			$(this).removeClass('on');
+		});
+	});
+	$(document).ready(function(){
+
+		var $mapLink = $('.map_name'),
+			$mapIcon = $('.map_c');
+
+		eachHover($mapLink, $mapIcon);
+		eachHover($mapIcon, $mapLink);
+
+		$('.map_movimg').addClass('is-clickable');
+
+		function eachHover($trigger, $target) {
+			$trigger.each(function(i, el){
+				var $this = $(el),
+					lastCnt = $trigger.length - 1;
+
+				$this.on('mouseenter mouseleave focus blur' , function() {
+					$this.toggleClass('is-active');
+					$target.eq(i).toggleClass('is-active');
+
+					if ( i == lastCnt ) {
+						$target.eq(i + 1).toggleClass('is-active');
+					}
+				});
+			});
+		}
+		});*/
+	$(document).ready(function(){
+		$(".i_list li").mouseover(function(){
+			var idx = $(this).index();
+			var obj = $(this);
+			over(idx, obj, $(".map_cou_list li"));
+		});
+
+		$(".map_cou_list li").mouseover(function(){
+			var idx = $(this).index();
+			var obj = $(this);
+			over(idx, obj, $(".i_list li"));
+		});
+
+		$(".map_cou_list li, .i_list li").mouseout(function(){
+			$(".map_cou_list li, .i_list li").removeClass("on");
+		});
+
+		function over(num, obj, obj2){
+			obj.not().siblings().removeClass("on");
+			obj2.removeClass("on");
+			obj2.eq(num).addClass("on");
+			obj.addClass("on");
+		};
+
+	});
+
+
+</script>
+<script>
+	$(document).ready(function(){
+
+	// Local copy of jQuery selectors, for performance.
+	var	my_jPlayer = $("#jquery_jplayer"),
+		my_trackName = $("#jp_container .track-name"),
+		my_playState = $("#jp_container .play-state"),
+		my_extraPlayInfo = $("#jp_container .extra-play-info");
+	// Some options
+	var	opt_play_first = false, // If true, will attempt to auto-play the default track on page loads. No effect on mobile devices, like iOS.
+		opt_auto_play = true, // If true, when a track is selected, it will auto-play.
+		opt_text_playing = "Now playing", // Text when playing
+		opt_text_selected = "Track selected"; // Text when not playing
+	// A flag to capture the first track
+	var first_track = true;
+	// Change the time format
+	$.jPlayer.timeFormat.padMin = false;
+	$.jPlayer.timeFormat.padSec = false;
+	$.jPlayer.timeFormat.sepMin = " : ";
+	$.jPlayer.timeFormat.sepSec = " ";
+	// Initialize the play state text
+	my_playState.text(opt_text_selected);
+
+		$("#jquery_jplayer_1").jPlayer({
+
+			ready: function () {
+				$(this).jPlayer("setMedia", {
+					title: "Stirring of a fool",
+					mp3: "/audio/audio_01.mp3",
+					wav: "/audio/audio_01.wav",
+				})//.jPlayer("play");//자동재생
+			},
+			/*play: function() { // To avoid multiple jPlayers playing together.
+				$(this).jPlayer("pauseOthers");
+			},*/
+		timeupdate: function(event) {
+			my_extraPlayInfo.text(parseInt(event.jPlayer.status.currentPercentAbsolute, 10) + "%");
+		},
+		play: function(event) {
+			my_playState.text(opt_text_playing);
+		},
+		pause: function(event) {
+			my_playState.text(opt_text_selected);
+		},
+		ended: function(event) {
+			my_playState.text(opt_text_selected);
+		},
+			swfPath: "/js",
+			supplied: "mp3, wav",
+			wmode: "window",
+			globalVolume: true,
+			useStateClassSkin: true,
+			autoBlur: false,
+			smoothPlayBar: true,
+			keyEnabled: true,
+			time:true,
+			showMin: true,
+			showSec: true
+
+		});
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function  () {
+		$(".audio-close").click(function  () {
+			$("#audioPlayContent").empty();
+			$("#modalBg").hide();
+			return false;
+		});
+		
+	});
+</script>
+<script>
+	$(document).ready(function(e){
+		$('ul.web_list li, .i_list li').click(function(){
+			$('.map_view').animate({right:"0px"},500);
+			$('.back').css('display','block');
+			$('body').css('overflow-y','hidden');
+			event.preventDefault();
+		});
+		$('.map_view .close, .back').click(function(e){
+			$('.map_view').animate({right:"-100%"},500);
+			$('.back').css('display','none');
+			$('body').css('overflow-y','auto');
+			event.preventDefault();
+		});
+
+	});
+</script>
+ <div id="wrap">
+  <div id="header">
+	<div class="head">
+		<h1><a href="#"><img src="../web/images/common/logo_2018.png" alt="청춘발산마을"/></a></h1>
+		<div class="menu">
+			<ul>
+				<li ><a href="../intro/village_intro.html">마을소개</a></li>
+				<li class="on"><a href="../village_walk/village_wk01.html">마을산책</a></li>
+				<li ><a href="../neighbor/village_nb01.html">마을이웃</a></li>
+				<li ><a href="../news/village_news01.html">마을소식</a></li>
+			</ul>
+		</div>
+		<div class="mob_menu">
+			<a href="#"><img src="../web/images/common/moblie_menu.png" alt="메뉴더보기"/></a>
+		</div>
+	</div>
+  </div>
+  <div id="container">
+	<div class="contents">
+		<div class="sub_title">
+			<dl>
+				<dt>마을산책</dt>
+				<dd>마을의 일상이 풍경이 되는 골목길</dd>
+			</dl>
+		</div>
+		<div class="board_ser02">
+			<span class="board_all2" id="boa_set2_text">지도 및 오디오 가이드</span>
+			<label for="boa_set2" class="sor_hide2">지도 및 오디오 가이드</label>
+			<select id="boa_set2" name="tmp_searchCnd" onchange="cnd_box();">
+			<option value="">지도 및 오디오 가이드</option>
+			<option value="">마을산책 추천 코스</option>
+			<option value="">투어신청</option>
+			</select>
+		</div>
+		<div class="sub_cont">
+			<div class="walk_tab">
+				<ul class="tab">
+					<li><a href="#" class="on"><span>지도 및 오디오 가이드</span></a></li>
+					<li><a href="#"><span>마을산책 추천 코스</span></a></li>
+					<li><a href="#"><span>투어신청</span></a></li>
+				</ul>
+			</div>
+			<div class="download">
+				<a href="#">지도 다운로드</a>
+				<a href="#">오디오 다운로드</a>
+			</div>
+			<div class="map">
+				<div class="map_info">
+					<p>청춘발산마을 홈페이지에서 제공하는 ‘오디오 가이드’와 함께 더욱 특별하고 풍성한 마을산책을 즐기세요.<span>※주민들이 살고 있는 마을입니다. 조용히 둘러봐주세요. 마을 길가에 쓰레기를 버리지 말아주세요.</span></p>
+				</div>
+				<div class="map_img">
+					<div class="map_movimg">
+						<div class="map_web">
+							<img src="../web/images/sub/village_walk/map_marker_2018.jpg" alt="청춘발산마을 지도 이미지" class="web_img"/>
+							<img src="../web/images/sub/village_walk/map_2018_m.jpg" alt="청춘발산마을 지도 이미지" class="mob_img"/>
+							<a href="#" class="map_ex"><img src="../web/images/sub/village_walk/map_ex.jpg" alt="지도확대"/></a>
+							<ul class="i_list">
+								<li class="marker1"><a href="#" class="map_c"><i>1</i></a></li>
+								<li class="marker2"><a href="#" class="map_c"><i>2</i></a></li>
+								<li class="marker3"><a href="#" class="map_c"><i>3</i></a></li>
+								<li class="marker4"><a href="#" class="map_c"><i>4</i></a></li>
+								<li class="marker5"><a href="#" class="map_c"><i>5</i></a></li>
+								<li class="marker6"><a href="#" class="map_c"><i>6</i></a></li>
+								<li class="marker7"><a href="#" class="map_c"><i>7</i></a></li>
+								<li class="marker8"><a href="#" class="map_c"><i>8</i></a></li>
+								<li class="marker9"><a href="#" class="map_c"><i>9</i></a></li>
+								<li class="marker10"><a href="#" class="map_c"><i>10</i></a></li>
+								<li class="marker11"><a href="#" class="map_c"><i>11</i></a></li>
+								<li class="marker12"><a href="#" class="map_c"><i>12</i></a></li>
+								<li class="marker13"><a href="#" class="map_c"><i>13</i></a></li>
+								<li class="marker14"><a href="#" class="map_c"><i>14</i></a></li>
+								<li class="marker15"><a href="#" class="map_c"><i>15</i></a></li>
+								<li class="marker16"><a href="#" class="map_c"><i>16</i></a></li>
+								<li class="marker17"><a href="#" class="map_c"><i>17</i></a></li>
+								<li class="marker18"><a href="#" class="map_c"><i>18</i></a></li>
+								<li class="marker19"><a href="#" class="map_c"><i>19</i></a></li>
+								<li class="marker20"><a href="#" class="map_c"><i>20</i></a></li>
+								<li class="marker21"><a href="#" class="map_c"><i>21</i></a></li>
+								<li class="marker22"><a href="#" class="map_c"><i>22</i></a></li>
+								<li class="marker23"><a href="#" class="map_c"><i>23</i></a></li>
+								<li class="marker24"><a href="#" class="map_c"><i>24</i></a></li>
+								<li class="marker25"><a href="#" class="map_c"><i>25</i></a></li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="map_list">
+						<ul class="map_cou_list web_list">
+							<li class="marx tabx map_name"><a href="#"><strong>1</strong><span>마을입구</span></a></li>
+							<li class="map_name"><a href="#"><strong>2</strong><span>할매텃밭 &amp; 기억저장소</span></a></li>
+							<li class="map_name"><a href="#"><strong>3</strong><span>샘몰경로당</span></a></li>
+							<li class="tabx map_name"><a href="#"><strong>4</strong><span>데블스 하우스</span></a></li>
+							<li class="map_name"><a href="#"><strong>5</strong><span>예쁜집(마을이그린그림 1)</span></a></li>
+							<li class="marx map_name"><a href="#"><strong>6</strong><span>청춘메세지</span></a></li>
+							<li class="tabx map_name"><a href="#"><strong>7</strong><span>프랜리 컬쳐</span></a></li>
+							<li class="map_name"><a href="#"><strong>8</strong><span>다경이의 식탁</span></a></li>
+							<li class="map_name"><a href="#"><strong>9</strong><span>청춘빌리지</span></a></li>
+							<li class="map_name"><a href="#"><strong>10</strong><span>아우라팩토리</span></a></li>
+							<li class="marx map_name"><a href="#"><strong>11</strong><span>발산광장</span></a></li>
+							<li class="map_name"><a href="#"><strong>12</strong><span>108계단</span></a></li>
+							<li class="map_name"><a href="#"><strong>13</strong><span>표류</span></a></li>
+							<li class="map_name"><a href="#"><strong>14</strong><span>앤카롱</span></a></li>
+							<li class="map_name"><a href="#"><strong>15</strong><span>발산상회</span></a></li>
+							<li class="map_name marx"><a href="#"><strong>16</strong><span>뽕뽕브릿지</span></a></li>
+							<li class="map_name"><a href="#"><strong>17</strong><span>마을골목길</span></a></li>
+							<li class="map_name"><a href="#"><strong>18</strong><span>별마루전망대</span></a></li>
+							<li class="map_name"><a href="#"><strong>19</strong><span>오타쿠연구소</span></a></li>
+							<li ><a href="#"><strong>20</strong><span>플롱</span></a></li>
+							<li class="map_name marx"><a href="#"><strong>21</strong><span>오방 협동조합</span></a></li>
+							<li class="map_name"><a href="#"><strong>22</strong><span>우리상회(마을이그린그림2)</span></a></li>
+							<li class="map_name"><a href="#"><strong>23</strong><span>주민민박</span></a></li>
+							<li class="map_name"><a href="#"><strong>24</strong><span>만선</span></a></li>
+							<li class="map_name"><a href="#"><strong>25</strong><span>역사문화박물관</span></a></li>
+						</ul>
+					<!--	<div class="moblie_list">
+							 <ul>
+								<li><a href="#" class="on"><span>1</span><strong>마을입구</strong></a></li>
+								<li><a href="#"><span>2</span><strong>마을입구 쉼터</strong></a></li>
+								<li><a href="#"><span>3</span><strong>샘몰경로당</strong></a></li>
+								<li><a href="#"><span>4</span><strong>데블스 하우스</strong></a></li>
+								<li><a href="#"><span>5</span><strong>마을이 그린 그림 1</strong></a></li>
+								<li><a href="#"><span>6</span><strong>만선</strong></a></li>
+								<li><a href="#"><span>7</span><strong>할매텃밭</strong></a></li>
+								<li><a href="#"><span>8</span><strong>기억저장소</strong></a></li>
+								<li><a href="#"><span>9</span><strong>발산광장</strong></a></li>
+								<li><a href="#"><span>10</span><strong>아우라 팩토리</strong></a></li>
+							</ul> 
+							<div class="more">
+								<a href="#">더보기</a>
+							</div>
+						</div>-->
+					</div>
+				</div>
+				<div class="map_view">
+					<div class="view_cont">
+						<div class="close">
+							<a href="#"><img src="../web/images/sub/village_walk/close.png" alt="닫기"/></a>
+						</div>
+						<h2><span>1</span>마을입구</h2>
+						<p class="txt">마을의 입구에서 ‘청춘발산마을’의 소개도 읽을 수 있고 마을 지도를 확인할 수 있습니다.</p>
+						<div class="view_img">
+							<ul class="bxslider">
+								<li><img src="../web/images/sub/village_walk/view_img.jpg" alt=""/></li>
+								<li><img src="../web/images/sub/village_walk/view_img.jpg" alt=""/></li>
+								<li><img src="../web/images/sub/village_walk/view_img.jpg" alt=""/></li>
+							</ul>
+						</div>
+						<div class="voice_file">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-single">
+									<div class="jp-gui jp-interface">
+										<div class="jp-controls">
+											<button class="jp-play" role="button" tabindex="0">play</button>
+										</div>
+										<div class="jp_box">
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+											<span class="jp-current-time" style="font-style:normal;"></span>
+										</div>
+										<div class="jp-volume-controls">
+											<button class="jp-mute" role="button" tabindex="0">mute</button>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="voice">
+							<h3>가이드 설명</h3>
+							<p>이곳은 천변가로 이어진 ‘발산’ 버스정류장 옆 ‘청춘발산마을’로 들어서는 마을의 입구입니다. ‘청춘발산마을'의 소개와 지도를 통해 청년들이 운영하는 공간들도 함께 살펴볼 수 있습니다. 또 마을 입구의 어르신들이 직접 가꾸고 관리하시는 화단과 쉼터를 보면 마을의 정취와 고즈넉함이 묻어납니다.</p>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(function(){
+					  $('.bxslider').bxSlider({
+						mode: 'fade'
+					  });
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="footer">
+	<div class="foot">
+		<div class="f_logo">
+			<img src="../web/images/common/f_logo_2018.png" alt="청춘발산마을"/>
+		</div>
+		<div class="add">
+			<div class="address">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 <span>｜ 구주소</span>  광주광역시 서구 양동 440-5번지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com <span>｜ 통신판매업신고번호</span>  제 2016-서울마포-1052호</p>
+				<p><span>전화번호</span>  070-4910-0339 <span>｜ 사업자번호</span>  128-82-85036 <span>｜ 상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="address_m">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com </p>
+				<p><span>상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="sns">
+				<a href="#"><img src="../web/images/common/f_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/i_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/y_2018.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="back">
+  </div>
+</div>
+ </BODY>
+</HTML>

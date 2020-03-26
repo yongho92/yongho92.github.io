@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 청춘발산마을 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="../web/css/common_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/sub_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/tablet_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/moblie_2018.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="../web/font/noto-sans-korean-webfont-master/css/noto-sans-korean.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/seoulhangang/css/seoulhangang.css" type="text/css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ </HEAD>
+	
+ <BODY>
+ <div id="wrap">
+  <div id="header">
+	<div class="head">
+		<h1><a href="#"><img src="../web/images/common/logo_2018.png" alt="청춘발산마을"/></a></h1>
+		<div class="menu">
+			<ul>
+				<li ><a href="../intro/village_intro.html">마을소개</a></li>
+				<li ><a href="../village_walk/village_wk01.html">마을산책</a></li>
+				<li ><a href="../neighbor/village_nb01.html">마을이웃</a></li>
+				<li ><a href="../news/village_news01.html">마을소식</a></li>
+			</ul>
+		</div>
+		<div class="mob_menu">
+			<a href="#"><img src="../web/images/common/moblie_menu.png" alt="메뉴더보기"/></a>
+		</div>
+	</div>
+  </div>
+  <div id="container">
+	<div class="contents">
+		<div class="sub_title sub_title_ns">
+			<dl>
+				<dt>마을소식</dt>
+				<dd>발산마을의 다양한 소식</dd>
+			</dl>
+		</div>
+		<div class="board_ser02">
+			<span class="board_all2" id="boa_set2_text">홍보자료</span>
+			<label for="boa_set2" class="sor_hide2">홍보자료</label>
+			<select id="boa_set2" name="tmp_searchCnd" onchange="cnd_box();">
+			<option value="">마을문화</option>
+			<option value="">홍보자료</option>
+			</select>
+		</div>
+		<div class="exp_ser_m">
+			<div class="board_ser10">
+				<span class="board_all10" id="boa_set10_text">언론보도</span>
+				<label for="boa_set10" class="sor_hide10">언론보도</label>
+				<select id="boa_set10" name="tmp_searchCnd" onchange="cnd_box();">
+				<option value="">인스타그램</option>
+				<option value="">홍보동영상</option>
+				<option value="">언론보도</option>
+				</select>
+			</div>	
+			<div class="search">
+				<label class="labelx" for="">검색</label>
+				<input type="text" id="search" name="search" class="ser_ipt"/>
+				<a href="#">검색</a>
+			</div>
+			<div class="board_ser09">
+				<span class="board_all9" id="boa_set9_text">전체</span>
+				<label for="boa_set9" class="sor_hide9">전체</label>
+				<select id="boa_set9" name="tmp_searchCnd" onchange="cnd_box();">
+				<option value="">전체</option>
+				<option value="">작성자</option>
+				</select>
+			</div>
+		</div>
+		<div class="sub_cont">
+			<div class="ns_cont nb_cont">
+				<div class="ns_tab nb_tab">
+					<ul>
+						<li><a href="#"><span>마을 문화</span></a></li>
+						<li><a href="#" class="on"><span>홍보자료</span></a></li>
+					</ul>
+				</div>
+				<div class="exp_ser">
+					<div class="not_tab">
+						<ul>
+							<li class="bg"><a href="#">인스타그램</a></li>
+							<li class="bg"><a href="#">홍보동영상</a></li>
+							<li><a href="#" class="on">언론보도</a></li>
+						</ul>
+					</div>
+					<div class="search">
+						<label class="labelx" for="">검색</label>
+						<input type="text" id="search" name="search" class="ser_ipt"/>
+					</div>
+					<div class="board_ser08">
+						<span class="board_all8" id="boa_set8_text">전체</span>
+						<label for="boa_set8" class="sor_hide8">전체</label>
+						<select id="boa_set8" name="tmp_searchCnd" onchange="cnd_box();">
+						<option value="">전체</option>
+						<option value="">작성자</option>
+						</select>
+					</div>
+				</div>
+				<div class="pres_list">
+					<table summary="언론보도자료">
+						<caption>언론보도자료</caption>
+						<thead>
+							<tr>
+								<th class="tit1 num hide">번호</th>
+								<th class="tit2 hide">매체명</th>
+								<th class="tit3 hide">제목</th>
+								<th class="tit4 hide">작성일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="num hide"><span>189</span></td>
+								<td class="hide">일요신문</td>
+								<td class="p_txt"><a href="#"><span>'르포' “옛날로 돌아간 느낌이에요”…광주 대표 슬럼가 ...</span></a>
+								<div class="mob_pres">
+									<span>일요신문</span>
+									<span>｜</span>
+									<span>2018-08-06</span>
+								</div>								
+								</td>
+								<td class="hide">2018-08-06</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>188</span></td>
+								<td class="hide">광주일보</td>
+								<td class="p_txt"><a href="#"><span>발산마을서 ‘청춘 발산’하세요…입주팀 모집</span></a>
+								<div class="mob_pres">
+									<span>광주일보</span>
+									<span>｜</span>
+									<span>2018-07-04</span>
+								</div>									
+								</td>
+								<td class="hide">2018-07-04</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>187</span></td>
+								<td class="hide">뉴스메이커</td>
+								<td class="p_txt"><a href="#"><span>광주 서구, 전국지방자치단체 일자리대상 '최우수상' 영예</span></a>
+								<div class="mob_pres">
+									<span>뉴스메이커</span>
+									<span>｜</span>
+									<span>2018-06-28</span>
+								</div>									
+								</td>
+								<td class="hide">2018-06-28</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>186</span></td>
+								<td class="hide">KBC광주방송</td>
+								<td class="p_txt"><a href="#"><span>[청년이 뛴다] 젊음과 열정 '청춘발산마을'</span></a>
+								<div class="mob_pres">
+									<span>KBC광주방송</span>
+									<span>｜</span>
+									<span>2018-05-29</span>
+								</div>									
+								</td>
+								<td class="hide">2018-05-29</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>185</span></td>
+								<td class="hide">KBC광주방송</td>
+								<td class="p_txt"><a href="#"><span> &lt;11/30(목) 모닝730 위크&gt; 청춘발산마을</span></a>
+								<div class="mob_pres">
+									<span>KBC광주방송</span>
+									<span>｜</span>
+									<span>작성 2018-03-19</span>
+								</div>									
+								</td>
+								<td class="hide">2018-03-19</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>184</span></td>
+								<td class="hide">일요신문</td>
+								<td class="p_txt"><a href="#"><span>'르포' “옛날로 돌아간 느낌이에요”…광주 대표 슬럼가 ...</span></a>
+								<div class="mob_pres">
+									<span>일요신문</span>
+									<span>｜</span>
+									<span>2018-03-13</span>
+								</div>									
+								</td>
+								<td class="hide">2018-03-13</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>183</span></td>
+								<td class="hide">광주일보</td>
+								<td class="p_txt"><a href="#"><span>발산마을서 ‘청춘 발산’하세요…입주팀 모집</span></a>
+								<div class="mob_pres">
+									<span>광주일보</span>
+									<span>｜</span>
+									<span>2018-02-27</span>
+								</div>									
+								</td>
+								<td class="hide">2018-02-27</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>182</span></td>
+								<td class="hide">뉴스메이커</td>
+								<td class="p_txt"><a href="#"><span>광주 서구, 전국지방자치단체 일자리대상 '최우수상' 영예</span></a>
+								<div class="mob_pres">
+									<span>뉴스메이커</span>
+									<span>｜</span>
+									<span>2018-02-06</span>
+								</div>									
+								</td>
+								<td class="hide">2018-02-06</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>181</span></td>
+								<td class="hide">KBC광주방송</td>
+								<td class="p_txt"><a href="#"><span>[청년이 뛴다] 젊음과 열정 '청춘발산마을'</span></a>
+								<div class="mob_pres">
+									<span>KBC광주방송</span>
+									<span>｜</span>
+									<span>2017-12-29</span>
+								</div>									
+								</td>
+								<td class="hide">2017-12-29</td>
+							</tr>
+							<tr>
+								<td class="num hide"><span>180</span></td>
+								<td class="hide">KBC광주방송</td>
+								<td class="p_txt"><a href="#"><span> &lt;11/30(목) 모닝730 위크&gt; 청춘발산마을</span></a>
+								<div class="mob_pres">
+									<span>KBC광주방송</span>
+									<span>｜</span>
+									<span>2017-12-15</span>
+								</div>									
+								</td>
+								<td class="hide">2017-12-15</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="page">
+						<a href="#" class="marx"><img src="../web/images/sub/news/page_icon01.png" alt="첫페이지이동"/></a>
+						<a href="#" class="left"><img src="../web/images/sub/news/page_icon02.png" alt="전페이지이동"/></a>
+						<a href="#" class="on">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#" class="right"><img src="../web/images/sub/news/page_icon03.png" alt="다음페이지이동"/></a>
+						<a href="#"><img src="../web/images/sub/news/page_icon04.png" alt="마지막페이지이동"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="footer">
+	<div class="foot">
+		<div class="f_logo">
+			<img src="../web/images/common/f_logo_2018.png" alt="청춘발산마을"/>
+		</div>
+		<div class="add">
+			<div class="address">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 <span>｜ 구주소</span>  광주광역시 서구 양동 440-5번지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com <span>｜ 통신판매업신고번호</span>  제 2016-서울마포-1052호</p>
+				<p><span>전화번호</span>  070-4910-0339 <span>｜ 사업자번호</span>  128-82-85036 <span>｜ 상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="address_m">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com </p>
+				<p><span>상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="sns">
+				<a href="#"><img src="../web/images/common/f_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/i_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/y_2018.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+ </BODY>
+</HTML>

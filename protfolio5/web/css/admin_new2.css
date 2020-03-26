@@ -1,0 +1,76 @@
+/* CSS Document */
+
+body {margin:0px; font-family:'돋움', '돋움체',dotum; font-size:12px; color:#000000;}
+a:hover{color:#000000; text-decoration:none;}
+a:link{color:#000000; text-decoration:none;}
+a:visited{color:#000000; text-decoration:none;}
+a:active{color:#000000; text-decoration:none;}
+input {font-size:12px; color:#3a3a3a;}
+
+select
+{
+	font-size:12px;
+}
+
+.top_bg{background:url(../images/admin/top_bg.gif) repeat-x; height:93px;}
+#top .logo{padding: 25px 20px 0 15px;}
+#top .menu_on{background:url(../images/admin/top_menu_on.gif) no-repeat; padding:0 1px 0 1px; min-width:112px; width:112px; height:35px; font-size:12px; text-align:center; vertical-align:middle; font-weight:bold; color:#000000;}
+#top .menu_off{background:url(../images/admin/top_menu_off.gif) no-repeat; padding:0 1px 0 1px; min-width:112px; width:112px; height:35px; font-size:12px; text-align:center; vertical-align:middle; font-weight:bold; color:#000000;}
+#top .top_btn{padding-top:10px; padding-right:20px;}
+#top .top_btn td{padding-left:2px;}
+
+#lnb {padding-top:19px; text-align:right;}
+#lnb .title2{height:85px; vertical-align:middle; text-align:center;}
+#lnb .lnb_bg{background-color:#f4f4f4;width:200px;} /* background:url(../images/admin/left_bg02.gif) repeat-y;  */
+#lnb td{ padding-right:10px;}
+#lnb .menu1{background-color:#3d3d3d; width:166px; height:33px; /*background:url(../images/admin/left_menu1_bg.gif) no-repeat;  padding-bottom:11px;*/ font-size:12px; vertical-align:middle; font-weight:bold; color:#fff;}
+#lnb .menu2_off{color:#000; text-align:right; font-size:12px;  vertical-align:middle; padding:10px 0 10px 0; padding-right:7px;}
+#lnb .menu2_on{background-position:100% 50%; text-align:right; font-size:12px; vertical-align:middle; font-weight:bold; padding:10px 0 10px 0; padding-right:7px;} /*background:url(../images/admin/left_menu2_on.gif) no-repeat; */
+
+
+#contents {color:#fff;}
+#contents .title{background:#6d6d6d; height:35px;}
+#contents .title .menu_txt{font-size:16px; font-weight:bold; padding-left:17px; color:#fff}
+#contents .title .date_txt{font-size:12px; text-align:right; padding-right:20px; color:#fff}
+#contents .search {border-top:solid 2px #e0e4e7; border-bottom:solid 2px #e0e4e7;}
+#contents .search .td1{font-size:14px; font-weight:bold; color:#5a6870; background-color:#e8f1f6; height:31px; padding-left:17px;}
+#contents .search .td2{font-weight:bold; color:#80878d; background-color:#f3f8fb; height:46px; padding-left:17px;}
+/*#contents .search .td2 .select1{background:url(../images/admin/con_select_box.gif) 0 1px no-repeat left; width:122px;}*/
+
+#contents .tbl .icon td{ border:none; padding:0 2px 0 2px; text-align:center;}
+#contents .tbl{border:1px solid #aecad5; font-size:12px; text-align:center;} 
+#contents .tbl th{padding:7px 0 4px;background-color:#e8f3f9;color:#1d486a;font-weight:bold;}
+#contents .tbl td{padding:6px 0 4px;border-top:1px solid #d7e5e8;color:#3e3f41;}
+.num{background-color:#e8f3f9; color:#3d5f76; height:45px;}
+
+.page{font-size:12px;color:#3d5f76;}
+.page a:hover{color:#3d5f76; text-decoration:none;}
+.page a:link{color:#3d5f76; text-decoration:none;}
+.page a:visited{color:#3d5f76; text-decoration:none;}
+.page a:active{color:#3d5f76; text-decoration:none;}
+.page span{padding:0 5px;}
+.page .selected{font-weight:bold;}
+
+#write {min-width:96%; width:98%;}
+#write table{border-top:solid 2px #e0e4e7; color:#3e3f41; font-size:12px; font-weight:normal;}
+#write th{border-bottom:solid 1px #e0e4e7; color:#1d486a; font-size:12px; font-weight:normal; height:31px; min-width:85px; width:85px; padding-left:45px;background:url(../images/admin/bullet01.gif) 22px 50% no-repeat #e8f1f6}
+#write td{border-bottom:solid 1px #e0e4e7; color:#3e3f41; font-size:12px; font-weight:normal; height:31px; background-color:#f3f8fb; padding-left:20px;}
+#write .add td{padding-left:0px; border:none;}
+#write .btn{padding:10px 0 10px 0; border:none; border-bottom:solid 2px #e0e4e7;  background-color:#f3f8fb;}
+
+.noData{
+	font-weight:bold;
+	text-align:center;
+	height:60px;
+	width:98%;
+}
+
+.tableWidth
+{
+	width:100%;
+}
+
+.topWidth
+{
+	width:100%;
+}

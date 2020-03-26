@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+/*reset*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin:0; padding:0;}
+ul{list-style:none;}
+img, fieldset{border:none; vertical-align:middle;}
+body { margin:0;  padding:0; color:#333; font-family: 'Lato', sans-serif;}
+a {color:#000;text-decoration:none;}         
+a:link,a:visited {color:#000; text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+em{font-style:normal;}
+caption, legend, .labelx{left:-9999px; font-size:0; position:absolute; display:none;}
+table{border-collapse:collapse;}
+
+::-moz-selection { color:#fff; background:#bb2025; }
+::selection { color:#fff; background:#bb2025; }
+
+.admin{width:627px; margin:311px auto 0;}
+.admin .admin_bg{padding-bottom:83px;}
+.admin .admin_bg .admin_cont{position:relative;}
+.admin .admin_bg .logo{width:100%;}
+.admin .admin_bg .logo .logo_box{text-align:center;}
+.admin .admin_bg .admin_cont .login{width:100%; height:163px; padding-top:32px;}
+.admin .admin_bg .admin_cont .login .login_box{box-shadow: 3px 4px 0px #92191d; border-radius:10px; border:1px solid #7d0f12; width:570px; margin:0 auto ; background:#fff; overflow:hidden; padding:15px 28px 15px;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw{float:left; margin-top:14px;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw ul{overflow:hidden;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw ul li{float:left;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw ul li .idpw{vertical-align:middle; width:134px; height:31px; border:1px solid #dadada;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw ul li label{vertical-align:middle; margin-right:10px; color:#222; font-size:15px; font-family:'Noto Sans CJK KR',sans-serif; font-weight:normal;}
+.admin .admin_bg .admin_cont .login .login_box .id_pw ul li.list_pw{margin-left:30px;}
+.admin .admin_bg .admin_cont .login .login_box .login_btn{float:right;}
+.admin .admin_bg .admin_cont .login .login_box .login_btn a{ border-radius:3px; text-align:center; display:inline-block ; background:url(../images/admin/btn_bg.png) repeat-x 0 0; color:#fff; width:116px; padding:13px 0; line-height:14px; font-size:16px; font-family:'Noto Sans CJK KR',sans-serif; font-weight:normal;}
+.admin .admin_bg .admin_cont .login .login_box .login_btn a span{font-size:12px; letter-spacing:1.5px; color:#eba7a9;}
+.admin .admin_bg .admin_cont .log_bg{position:absolute; top:18px; left:28%;}
+
+
+
+
+/*관리자*/
+.main_top_2018{background:url(../images/admin/head_bg.png) repeat-x 0 0 !important;}
+.left_tit_2018{background:url(../images/admin/left_2018.png) repeat-x 0 0 !important;}
+.left_menu > ul > li > a.sel{background:url(../images/admin/left_on.png) no-repeat 0 0 !important;}
+#contents .title{background:#d24242 !important;}
+#top .sel{color:#bb2025 !important;}
+#top .main_menu{background:url(../images/admin/top_on.png) no-repeat right bottom !important;}
+#top .sel{background:url(../images/admin/top_off.png) no-repeat right bottom !important;}
+#listLayer{margin-top:20px;}
+.th_middle{border-left:1px solid #eeddee; background:url(../images/admin/list_bg.png) repeat-x 0 0 !important; padding:7px 0;}
+.th_middle:first-child{border-left:none;}
+.list_2018 td{text-align:center; padding:7px 0; border-bottom:1px solid #ededed;}
+.th_middle{border-left:1px solid #eeddee; background:url(../images/admin/list_bg.png) repeat-x 0 0 !important; padding:7px 0;}
+#listSearchConditionLayer{padding:15px 0 0 10px;}
+#pageNavigatorLayer{text-align:center; margin-top:10px;}
+#tmp_cond{height:21px;}
+.allselt{height:21px; margin-right:20px;}
+#tmp_str{margin-right:20px; width:170px;}
+#total_cnt{color:#ff5400;}
+
+.list_2018 td.td_middle a{width: 420px;
+    color: #0077a1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

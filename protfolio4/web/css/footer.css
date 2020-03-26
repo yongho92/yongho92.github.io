@@ -1,0 +1,7 @@
+ @charset "utf-8";
+
+#footer{width:100%;}
+.foot_1{background:#37373a; width:100%; height:171px;}
+.foot_1 .foot_cont1{width:1180px; margin:0 auto;}
+.foot_1 .foot_cont1 h4{text-align:center; padding:50px 0 12px;}
+.foot_1 .foot_cont1 p{text-align:center; color:#afaeb8; font-size:13px; line-height:20px;}

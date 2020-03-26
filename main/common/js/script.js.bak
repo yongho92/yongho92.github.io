@@ -1,0 +1,57 @@
+$(function(){
+	var wh = $(window).height();
+	$('article').css('height', wh);
+	$('#bg1').addClass('on');
+
+	 var lastScroll = 0;
+     $(window).scroll(function(event){
+          var scroll = $(this).scrollTop();
+          if (scroll > 300){
+          //이벤트를 적용시킬 스크롤 높이
+               $("#bg2").addClass("on");
+          }
+          else {
+               $("#bg2").removeClass("on");
+          }
+          if (scroll > 1300){
+          //이벤트를 적용시킬 스크롤 높이
+               $("#bg3").addClass("on");
+          }
+          else {
+               $("#bg3").removeClass("on");
+          }
+          lastScroll = scroll;
+     });
+
+
+
+});
+$(document).keydown(function(event) {
+	  if (event.keyCode == '33') {
+		$('html,body').stop().animate({scrollTop:0},500);	
+		$('.bg').removeClass('on');
+		$('#bg1').addClass('on');
+	  }
+	  else if (event.keyCode == '34') {
+		$("html,body").stop().animate({scrollTop:$(document).height()},800);		
+		$('.bg').removeClass('on');
+		$('#bg4').addClass('on');		
+	  }
+
+	  $("section").scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        var innerHeight = $(this).innerHeight();
+        var scrollHeight = $(this).prop('scrollHeight');
+
+        if (scrollTop + innerHeight >= scrollHeight) {
+			alert('11');
+        } else {
+			alert('22');
+        }
+	});
+
+});
+
+$(window).load(function(){
+	$("html, body").animate({ scrollTop: 0 },10); 
+});

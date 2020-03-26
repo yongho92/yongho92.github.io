@@ -1,0 +1,746 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+ <HEAD>
+  <TITLE> With Mando </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link href="../web/css/common.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/sub.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/tablet.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/mobile.css" rel="stylesheet" type="text/css" />
+  <link href="../web/font/Notosans/notosans.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../web/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../web/js/common.js"></script>
+  <script src="../web/js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="../web/js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../web/js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+		var rv = '';
+		if (navigator.appName == 'Microsoft Internet Explorer') {
+			var ua = navigator.userAgent;
+			var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null)
+				rv = parseFloat(RegExp.$1);
+		}
+		
+		if (rv == '8' || rv == '7' || rv == '6') {
+			$('#google_translate_element').hide();
+		} else {
+
+			function googleTranslateElementInit() {
+
+				/*
+				if ($('.mob_head').is(':visible')) {
+                    //alert("aa");
+					new google.translate.TranslateElement({
+						pageLanguage: 'ko', includedLanguages: 'ko,af,ar,az,be,bg,bn,bs,ca,ceb,cs,cy,da,de,el,eo,es,et,eu,fa,fi,fr,ga,gl,gu,ha,hi,hmn,hr,ht,hu,hy,id,ig,is,it,iw,ja,jv,ka,kk,km,kn,la,lo,lt,lv,mg,mi,mk,ml,mn,mr,ms,mt,my,nl,no,ny,pa,pl,pt,ro,ru,si,sk,sl,so,sq,sr,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,vi,yi,yo,zu',
+						layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+					}, 'google_translate_element_m');
+
+					$('#google_translate_element').on('click', function () {
+						var spl = $('#google_translate_element_m').html().split('&nbsp;&nbsp;');
+
+						$('#google_translate_element_m').toggle();
+					});
+
+					$(window).scroll(function () {
+						$('.fixed_gnb').css({
+						})
+					});
+				} else {
+				*/
+					new google.translate.TranslateElement({
+						pageLanguage: 'ko', includedLanguages: 'ko,en,ja,es,pt,pl,tr,ta,zh-TW,zh-CN,hi',
+						layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+					}, 'google_translate_element');
+					//$('.skiptranslate').appendTo('.fixed_gnb');
+
+
+					$(window).scroll(function () {
+						$('.fixed_gnb').css({
+						})
+					});
+				//}
+
+
+			}
+
+			var trans_script = $('<script>').appendTo($('head'));
+			trans_script.attr({
+				'type': "text/javascript",
+				'src': "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+				'title': "Translation"
+			})
+		}
+
+
+
+	</script>
+
+ </HEAD>
+
+ <body>
+
+<!-- <div id="google_translate_element"></div> -->
+
+  <div id="wrap">
+	<div id="header">
+		<div class="head_top_box">
+			<div class="head_top">
+				<div class="mob_ser">
+					<ul>
+						<li><a href="#"><img src="../web/images/common/sear_btn.png" alt="검색" class="ser_btn"/><img src="../web/images/common/t_menu_on.png" alt="검색닫기" class="ser_clo"/></a>
+							<div class="m_sear_box">
+								<div class="sear_cont">
+									<div class="sear">
+										<input type="text" id="search_t" name="search" class="sear_ipt" placeholder="검색어를 입력하세요."/>
+										<label for="search_t" class="labelx">검색</label>
+										<button type="button">검색</button>
+										<div class="p_tag">
+											<p>인기태그</p>
+											<ul>
+												<li><a href="#"># 패밀리만도</a></li>
+												<li><a href="#"># 감사합니데이</a></li>
+												<li><a href="#"># 기업문화</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</li>
+					</ul>
+				</div>
+				<div class="head_btn1">
+					<ul>
+						<li class="icon1" id="google_translate_element"></li>
+						<li class="icon2"><a href="#">총무포털</a></li>
+						<li class="icon3"><a href="#">G-HRM</a></li>
+					</ul>
+				</div>
+				<div class="mob_head">
+					<div class="menu_t">
+						<div class="mob_menu">
+							<a href="#" ><img src="../web/images/common/t_menu.png" alt="메뉴보기" class="mob_more"/><img src="../web/images/common/t_menu_on.png" alt="메뉴닫기" class="mob_close"/></a>
+							<div class="mob_menubox">
+								<div class="m_menu_top">
+									<ul>
+										<li class="icon1"><a href="#">판교지킴이</a></li>
+										<li class="icon2"><a href="#">마이페이지</a></li>
+										<li class="icon3"><a href="#"><span>1</span>감사메세지</a></li>
+									</ul>
+								</div>
+	<div class="m_menu">
+									<ul>
+										<li class="nobr"><a href="javascript:;"  class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu1.png" alt="mando" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li><a href="javascript:;" class="depth03"><span class="men_arrow2"><img src="../web/images/common/t_menu2.png" alt="비전/핵심가치" class="mob_img4"/></span></a>
+													<ul>
+														<li><a href="../mando/sub01.html"><img src="../web/images/common/t_menu1_1.png" alt="경영철학" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub03.html"><img src="../web/images/common/t_menu1_2.png" alt="비전" class="mob_img6"/></a></li>
+														<li><a href="../mando/sub02.html"><img src="../web/images/common/t_menu1_3.png" alt="핵심가치" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub05.html"><img src="../web/images/common/t_menu1_4.png" alt="기업문화" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub06.html"><img src="../web/images/common/t_menu1_5.png" alt="자료실 " class="mob_img7"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu3.png" alt="미디어룸" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../media/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu3_1.png" alt="만도뉴스" class="mob_img12"/></span></a>
+												</li>
+												<li class="grbg"><a href="../media/sub02.html" class="depth03"><span><img src="../web/images/common/t_menu3_2.png" alt="MCN TV" class="mob_img13"/></span></a></li>
+												<li><a href="javascript:;" class="depth03"><span class="men_arrow2"><img src="../web/images/common/t_menu3_3.png" alt="만도 소식지" class="mob_img14"/></span></a>
+													<ul>
+														<li><a href="../media/sub03.html"><img src="../web/images/common/t_menu2_1.png" alt="사보 만울림"  class="mob_img8"/></a></li>
+														<li><a href="../media/sub04.html"><img src="../web/images/common/t_menu2_2.png" alt="글로벌 소식지" class="mob_img9"/></a></li>
+														<li><a href="../media/sub06.html"><img src="../web/images/common/t_menu2_3.png" alt="비지니스유닛 소식지"  class="mob_img10"/></a></li>
+														<li><a href="../media/sub07.html"><img src="../web/images/common/t_menu2_4.png" alt="뉴스레터" class="mob_img5"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu4.png" alt="컬쳐스토리" class="mob_img2"/> </span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../culture_story/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu4_1.png" alt="컬쳐스토리" class="mob_img15"/></span></a>
+												<li class="nobr2 grbg"><a href="../culture_story/sub03.html" class="depth03"><span><img src="../web/images/common/t_menu4_2.png" alt="Manstagram" class="mob_img16"/></span></a>
+												</li>
+											</ul>
+										</li>
+
+										<li><a href="../thank/sub01.html" class="depth01"><span><img src="../web/images/common/t_menu5.png" alt="감사합니데이" class="mob_img3"/> </span></a></li>
+										<li><a href="../mantong/sub01.html" class="depth01"><span><img src="../web/images/common/t_menu6.png" alt="만통톡톡" class="mob_img1"/> </span></a></li>
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu7.png" alt="복지알림" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../welfare/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu7_1.png" alt="사내복지" class="mob_img11"/></span></a>
+												</li>
+												<li class="grbg"><a href="../welfare/sub02.html" class="depth03"><span><img src="../web/images/common/t_menu7_2.png" alt="경조사"  class="mob_img17"/></span></a></li>
+												<li class="grbg"><a href="../welfare/sub03.html" class="depth03"><span><img src="../web/images/common/t_menu7_3.png" alt="식단정보" class="mob_img11"/></span></a>
+												<li class="grbg"><a href="../welfare/sub07.html" class="depth03"><span><img src="../web/images/common/t_menu7_4.png" alt="버스배차" class="mob_img11"/></span></a>
+												</li>
+											</ul>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<h1><a href="../index.html"><img src="../web/images/common/logo.png" alt="with mando"/></a></h1>
+				</div>
+				<div class="head_btn2">
+					<ul>
+						<li class="icon4"><a href="#">판교지킴이</a></li>
+						<li class="icon5"><a href="#">마이페이지</a></li>
+						<li class="icon6"><a href="#"><span>1</span>감사메세지</a></li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+		<div class="head_bot_box">
+			<div class="head_bot">
+				<div class="menu">
+					<div class="all_menu">
+						<a href="#"><img src="../web/images/common/a_menu.png" alt="전체메뉴보기"/></a>
+						<div class="a_menu">
+							<div class="a_top">
+								<div class="a_close">
+									<a href="#">Close</a>
+								</div>
+								<div class="a_logo">
+									<a href="#"><img src="../web/images/common/logo.png" alt="with mando"/></a>
+								</div>
+								<div class="a_r">
+									<ul>
+										<li class="icon1"><a href="#">총무포털</a></li>
+										<li class="icon2"><a href="#">G-HRM</a></li>
+									</ul>									
+								</div>
+							</div>
+								<div class="a_list">
+								<ul>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../mando/sub01.html"><img src="../web/images/common/a_menu_1.png" alt="MANDO"/></a></h3>
+											<ul>
+												<li class="bgx"><a href="../mando/sub01.html"><span><img src="../web/images/common/a_menu_1_1.png" alt="비전·핵심가치"/></span></a>
+													<ul>
+														<li><a href="../mando/sub01.html"><img src="../web/images/common/a_menu_1_1_1.png" alt="경영철학"/></a></li>
+														<li><a href="../mando/sub03.html"><img src="../web/images/common/a_menu_1_1_2.png" alt="비전"/></a></li>
+														<li><a href="../mando/sub02.html"><img src="../web/images/common/a_menu_1_1_3.png" alt="핵심가치"/></a></li>
+														<li><a href="../mando/sub05.html"><img src="../web/images/common/a_menu_1_1_4.png" alt="기업문화"/></a></li>
+														<li><a href="../mando/sub06.html"><img src="../web/images/common/a_menu_1_1_5.png" alt="자료실 "/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../media/sub01.html"><img src="../web/images/common/a_menu_2.png" alt="미디어룸"/></a></h3>
+											<ul>
+												<li><a href="../media/sub01.html"><span><img src="../web/images/common/a_menu_2_1.png" alt="만도뉴스"/></span></a></li>
+												<li><a href="../media/sub02.html"><span><img src="../web/images/common/a_menu_2_2.png" alt="MCN TV"/></span></a></li>
+												<li class="bgx"><a href="../media/sub03.html"><span><img src="../web/images/common/a_menu_2_3.png" alt="만도 소식지"/></span></a>
+													<ul>
+														<li><a href="../media/sub03.html"><img src="../web/images/common/a_menu_2_1_1.png" alt="사보 만울림"/></a></li>
+														<li><a href="../media/sub04.html"><img src="../web/images/common/a_menu_2_1_2.png" alt="글로벌 소식지"/></a></li>
+														<li><a href="../media/sub06.html"><img src="../web/images/common/a_menu_2_1_3.png" alt="사업본부 소식지"/></a></li>
+														<li><a href="../media/sub07.html"><img src="../web/images/common/a_menu_2_1_4.png" alt="뉴스레터"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../culture_story/sub01.html"><img src="../web/images/common/a_menu_3.png" alt="컬쳐스토리"/></a></h3>
+											<ul>
+												<li><a href="../culture_story/sub01.html"><span><img src="../web/images/common/a_menu_3_1.png" alt="컬쳐스토리"/></span></a></li>
+												<li class="bgx"><a href="../culture_story/sub03.html"><span><img src="../web/images/common/a_menu_3_2.png" alt="Manstagram"/></span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../thank/sub01.html"><img src="../web/images/common/a_menu_4.png" alt="감사합니데이"/></a></h3>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../mantong/sub01.html"><img src="../web/images/common/a_menu_5.png" alt="만통톡톡"/></a></h3>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../welfare/sub01.html"><img src="../web/images/common/a_menu_6.png" alt="복지알림"/></a></h3>
+											<ul>
+												<li><a href="../welfare/sub01.html"><span><img src="../web/images/common/a_menu_6_1.png" alt="사내복지"/></span></a></li>
+												<li><a href="../welfare/sub02.html"><span><img src="../web/images/common/a_menu_6_2.png" alt="경조사"/></span></a></li>
+												<li><a href="../welfare/sub03.html"><span><img src="../web/images/common/a_menu_6_3.png" alt="식단정보"/></span></a></li>
+												<li class="bgx"><a href="../welfare/sub07.html"><span><img src="../web/images/common/a_menu_6_4.png" alt="버스배차"/></span></a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="a_bot">
+								<div class="a_cont2">
+									<ul>
+										<li><a href="#">이용약관</a></li>
+										<li class="on"><a href="#">개인정보처리방침</a></li>
+										<li><a href="#">이메일무단수집거부</a></li>
+										<li><a href="#">사이트맵 </a></li>
+										<li class="bgx"><a href="#">Contac us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu_box">
+						<ul>
+							<li class="first"><a href="../mando/sub01.html"><img src="../web/images/common/menu_t1.png" alt="MANDO"/></a></li>
+							<li><a href="../media/sub01.html"><img src="../web/images/common/menu_t2.png" alt=" 미디어룸"/></a></li>
+							<li><a href="../culture_story/sub01.html"><img src="../web/images/common/menu_t3.png" alt=" 컬쳐스토리 "/></a></li>
+							<li><a href="../thank/sub01.html"><img src="../web/images/common/menu_t4.png" alt="감사합니데이"/></a></li>
+							<li><a href="../mantong/sub01.html"><img src="../web/images/common/menu_t5.png" alt="만통톡톡"/></a></li>
+							<li><a href="../welfare/sub01.html"><img src="../web/images/common/menu_t6.png" alt="복지알림"/></a></li>
+						</ul>
+						<div class="menu_2">
+							<div class="menu2_box">
+								<div class="menu_2d menu_2d_01">
+									<ul>
+										<li><a href="../mando/sub01.html"><img src="../web/images/common/sub_t1.png" alt="비전 핵심가치"/></a>
+											<ul>
+												<li><a href="../mando/sub01.html"><img src="../web/images/common/sub_m1.png" alt="경영철학"/></a></li>
+												<li><a href="../mando/sub03.html"><img src="../web/images/common/sub_m2.png" alt="비전"/></a></li>
+												<li><a href="../mando/sub02.html"><img src="../web/images/common/sub_m3.png" alt="핵심가치"/></a></li>
+												<li><a href="../mando/sub05.html"><img src="../web/images/common/sub_m4.png" alt="기업문화"/></a></li>
+												<li><a href="../mando/sub06.html"><img src="../web/images/common/sub_m5.png" alt="자료실 "/></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="menu_2d">
+									<ul>
+										<li><a href="../media/sub01.html"><img src="../web/images/common/sub_t2.png" alt="만도뉴스"></a></li>
+										<li><a href="../media/sub02.html"><img src="../web/images/common/sub_t3.png" alt="MCN TV"/></a></li>
+										<li><a href="../media/sub03.html"><img src="../web/images/common/sub_t4.png" alt="만도 소식지"/></a>
+											<ul>
+												<li><a href="../media/sub03.html"><img src="../web/images/common/sub_m6.png" alt="사보 만울림"/></a></li>
+												<li><a href="../media/sub04.html"><img src="../web/images/common/sub_m7.png" alt="글로벌 소식지"/></a></li>
+												<li><a href="../media/sub06.html"><img src="../web/images/common/sub_m8.png" alt="비지니스유닛 소식지"/></a></li>
+												<li><a href="../media/sub07.html"><img src="../web/images/common/sub_m9.png" alt="뉴스레터"/></a></li>
+											</ul>
+										</li>								
+									</ul>
+								</div>
+								<div class="menu_2d menu_2d_02">
+									<ul>
+										<li><a href="../culture_story/sub01.html"><img src="../web/images/common/sub_t5.png" alt="컬쳐스토리"/></a></li>
+										<li><a href="../culture_story/sub03.html"><img src="../web/images/common/sub_t6.png" alt="Manstagram"/></a></li>
+									</ul>	
+								</div>
+								<div class="menu_2d menu_2d_03">
+									<ul>
+										<li><a href="../welfare/sub01.html"><img src="../web/images/common/sub_t7.png" alt="사내복지"/></a></li>
+										<li><a href="../welfare/sub02.html"><img src="../web/images/common/sub_t8.png" alt="경조사"/></a></li>
+										<li><a href="../welfare/sub03.html"><img src="../web/images/common/sub_t9.png" alt="식단정보"/></a></li>
+										<li><a href="../welfare/sub07.html"><img src="../web/images/common/sub_t10.png" alt="버스배차"/></a></li>
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<a href="#"><img src="../web/images/common/search.png" alt="검색"/></a>
+						<div class="sear_box">
+							<div class="sear_cont">
+								<div class="close">
+									<a href="#" class="aaa"><img src="../web/images/common/close.png" alt="검색닫기"/></a>
+								</div>
+								<div class="sear">
+									<input type="text" id="search" name="search" class="sear_ipt" placeholder="검색어를 입력하세요."/>
+									<label for="search" class="labelx">검색</label>
+									<button type="button">검색</button>
+									<div class="p_tag">
+										<p>인기태그</p>
+										<ul>
+											<li><a href="#"># 만도가족</a></li>
+											<li><a href="#"># 위드만도</a></li>
+											<li><a href="#"># 감사합니데이</a></li>
+											<li><a href="#"># 윤곡상</a></li>
+											<li><a href="#"># 주부아카데미</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="comm_box">
+			<div class="s_title">
+				<div class="s_tit_box">
+					<h2><img src="../web/images/sub/etc_txt1.png" alt="이용약관"/><img src="../web/images/sub/etc_txt5.png" alt="유틸리티" class="m_subtit"/></h2>
+				</div>
+			</div>
+			<div class="sub_tab sub_tab_f">
+				<div class="sub_tab_3">
+					<ul>
+						<li class="on"><a href="#"><img src="../web/images/sub/etc_txt6_on.png" alt="이용약관" class="tab2_txt3"/></a></li>
+						<li><a href="#"><img src="../web/images/sub/etc_txt7.png" alt="개인정보처리방침" class="tab2_txt13"/></a></li>
+						<li><a href="#"><img src="../web/images/sub/etc_txt8.png" alt="이메일무단수집거부" class="tab2_txt14"/></a></li>
+						<li><a href="#"><img src="../web/images/sub/etc_txt9.png" alt="사이트맵" class="tab2_txt3"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="s_cont">
+				<div class="etc_1">
+					<div class="etc_t">
+						<h3>위드만도 서비스 이용약관</h3>
+						<div class="n_sear selectbox">
+							<dl class="dropdown">
+								<dt><a href="javascript:void(0);"><span>2018년 12월 22일 이후</span></a></dt>
+								<dd>
+									<ul class="dropdown2" style="display: none;">
+										<li><a href="javascript:void(0);">2018년 12월 22일 이후</a></li>
+										<li><a href="javascript:void(0);">2017년 12월 22일 이후</a></li>
+										<li><a href="javascript:void(0);">2016년 12월 22일 이후</a></li>
+										<li><a href="javascript:void(0);">2015년 12월 22일 이후</a></li>
+										<li><a href="javascript:void(0);">2014년 12월 22일 이후</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<h4 class="marx">제 1 장 총 칙</h4>
+					<dl>
+						<dt>제 1 조 (목적)</dt>
+						<dd>1. 이 회원규칙 및 프라이버시(Privacy) 규정은 "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하여 (주)만도(이하 "회사"라 한다)가 제공하는 www.mando.com 서비스(이하 "서비스 "라 한다)의 이용조건, 절차 그리고 회원규칙에 관한 사항을 규정함을 목적으로 합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 2 조 (공지 및 준용)</dt>
+						<dd>1. 이 규정의 내용은 서비스 화면에 게시하거나 기타의 방법으로 회원에게 공지함으로써 효력을 발생합니다.</dd>
+						<dd>2. 회사는 이 규정을 변경할 수 있으며, 변경된 규정은 제1항과 같은 방법으로 공지함으로 써 효력을 발생합니다.</dd>
+						<dd>3. 현 개인정보보호정책의 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 '공지사항'을 통해 고지할 것입니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 3 조 (규정 외 준칙)</dt>
+						<dd>1. 이 규정에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법 및 기타 관련법령의 규정에 의합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 4 조 (용어의 정의)</dt>
+						<dd>1. 이 규정에서 사용하는 용어의 정의는 다음과 같습니다.  
+							<ul>
+								<li>1) 회원 : 회사와 서비스 이용계약을 체결한 자  </li>
+								<li>2) 이용자ID : 회원 식별과 회원의 서비스 이용을 위하여 회원이 선정한 문자와 숫자의 조합   </li>
+								<li>3) 비밀번호 : 회원의 비밀 보호를 위함  </li>
+								<li>4) 운영자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 사람   </li>
+								<li>5) 해지 : 회사 또는 회원이 서비스 개통 후 이용계약을 해약하는 것</li>
+							</ul>
+						</dd>
+					</dl>
+					<h4>제 2 장 개인정보활용 및 보호</h4>
+					<dl>
+						<dt>제 5 조 (개인정보 수집에 대한 동의)</dt>
+						<dd>1. 회사는 귀하께서 회사의 개인정보보호방침 또는 이용약관의 내용에 대해「동의합니다」버튼 또는「동의하지 않습니다」버튼을 클릭 할 수 있는  <span>절차를 마련하고 있으며, 귀하가「동의합니다」버튼을 클릭하면 개인정보 수집에 대해 동의한 것으로 봅니다.</span>
+							<ul>
+								<li>1) 필수항목 : ID, 비밀번호, 이름, 이메일, 연락처, IP주소, 쿠키, MAC주소, 서비스 이용기록, 방문기록</li>
+								<li> 2) 선택항목 : 닉네임, 휴대폰번호, 생일, 주소</li>
+								<li>3) 개인정보 수집방법 : 홈페이지(회원가입, 상담게시판, 응모, 공개게시판), 이벤트 행사 응모</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 6 조 (개인정보의 수집 및 이용목적)</dt>
+						<dd>1. 회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+							<ul>
+								<li>1) 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공</li>
+								<li>2) 회원 관리 : 회원제 서비스 이용에 따른 본인확인, 가입 의사 확인 , 연령확인 , 불만처리 등 민원처리</li>
+								<li>3) 마케팅 및 광고에 활용 : 이벤트 등 광고성 정보 전달, 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계</li>
+							</ul>
+						</dd>
+						<dd>2. 단, 수집목적 또는 제공받은 목적이 달성된 경우에도 법률의 규정에 의하여 보존할 필요성이 있는 경우에는 귀하의 개인정보를 보유할 수 있습니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 7 조 (개인정보의 보유 및 이용기간)</dt>
+						<dd>1. 회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 8 조 (개인정보의 파기절차 및 방법)</dt>
+						<dd>1. 회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.
+							<ul>
+								<li>1) 파기절차 : 회원이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기 별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른  목적으로 이용되지 않음</li>
+							</ul>
+						</dd>
+						<dd>  2) 파기방법 : 
+							<ul>
+								<li>- 전자적 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 파기합니다.</li>
+								<li> - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 9 조 (개인정보 제공)</dt>
+						<dd>1. 회사는 회원의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. 
+							<ul>
+								<li>1) 회원이 사전에 동의한 경우</li>
+								<li>2) 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+								<li>3) 보다 나은 서비스 제공을 위하여 패밀리사이트(하나의 아이디로 개별웹사이트를 이용할 수 있는 웹사이트 연합체)에 개인정보를 제공하거나 공유하는데 <span>회원이 동의한 경우</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 10 조 (수집한 개인정보의 위탁)</dt>
+						<dd>회사는 회원의 동의없이 회원의 정보를 외부 업체에 위탁하지 않습니다. 향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 회원에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다. </dd>
+					</dl>
+					<dl>
+						<dt>제 11 조 (회원 및 법정대리인의 권리와 그 행사방법)</dt>
+						<dd>1. 회원 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.</dd>
+						<dd>2. 회원 혹은 만 14세 미만 아동의 개인정보 조회?수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정’ 등)을 가입해지(동의철회)를 위해서는 “회원탈퇴”를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다. 혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.</dd>
+						<dd>3. 회원이 개인정보의 오류에 대한 정정을 요청한 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.</dd>
+						<dd>4. www.mando.com은 회원 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 “www.mando.com이 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 12 조 (개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항)</dt>
+						<dd>1. 회사는 회원의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’ 등을 운용합니다. 쿠키란 www.mando.com의 웹사이트를 운영하는데 이용되는 서버가 회원의 브라우저에 보내는 아주 작은 텍스트 파일로서 회원의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위해 쿠키를 사용합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 13 조 (쿠키 사용 목적)</dt>
+						<dd>1. 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 회원의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스를 제공합니다.</dd>
+						<dd>2. 회원은 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 회원은 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 14 조 (쿠키 설정 거부 방법)</dt>
+						<dd>1. 쿠키설정 거부 방법의 예: 쿠키 설정을 거부하는 방법으로는 회원님이 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다. 
+							<ul>
+								<li>1) 설정방법 예(인터넷 익스플로어의 경우)
+									<ul>
+										<li> : 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보 <span>단, 회원이 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.</span></li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<h4>제 3 장 서비스 이용계약</h4>
+					<dl>
+						<dt>제 15 조 (이용계약의 성립)</dt>
+						<dd>1. 아래 "위의 이용약관에 동의하십니까?" 라는 물음에 회원이 "동의"단추를 누르면 이 규정에 동의하는 것으로 간주됩니다.</dd>
+						<dd>2. 이용계약은 회원의 이용신청에 대하여 회사가 승낙함으로써 성립합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 16 조 (이용신청)</dt>
+						<dd>1. 이용신청은 온라인으로 다음 사항을 가입신청 및 양식에 기록하여 신청합니다.
+							<ul>
+								<li> 1) 이름</li>
+								<li>2) 이용자 ID</li>
+								<li>3) 비밀번호</li>
+								<li>4) 연락처</li>
+								<li>5) 주소</li>
+								<li>6) 기타사항</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 17 조 (이용신청의 승낙)</dt>
+						<dd>1. 회사는 회원이 제 6 조에서 정한 모든 사항을 정확히 기재하여 이용신청을 하였을 때 승낙합니다.</dd>
+						<dd>2. 회사는 다음 각 호의 1에 해당하는 이용신청에 대하여는 승낙을 유보할 수 있습니다.
+							<ul>
+								<li>1) 설비에 여유가 없는 경우 </li>
+								<li>2) 기술상 지장이 있는 경우 </li>
+								<li>3) 기타 회사가 필요하다고 인정되는 경우 </li>
+							</ul>
+						</dd>
+						<dd>3. 회사는 다음 각 호의 1에 해당하는 이용신청에 대하여는 이를 승낙하지 아니 할 수 있습니다. 
+							<ul>
+								<li>1) 이름이 실명이 아닌 경우 </li>
+								<li> 2) 다른 사람의 명의를 사용하여 신청한 경우 </li>
+								<li>3) 이용신청 시 필요내용을 허위로 기재하여 신청한 경우 </li>
+								<li>4) 사회의 안녕질서 또는 미풍양속을 저해할 목적으로 신청한 경우 </li>
+								<li> 5) 기타 회사가 정한 이용신청요건이 미비 되었을 때</li>
+							</ul>						
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 18 조 (계약사항의 변경)</dt>
+						<dd>1. 회원은 이용신청 시 기재한 사항이 변경되었을 경우에는 온라인수정을 해야 합니다.</dd>
+					</dl>
+					<h4>제 4 장 서비스 이용</h4>
+					<dl>
+						<dt>제 19 조 (회사의 의무)</dt>
+						<dd>1. 회사는 서비스 제공과 관련해서 알고 있는 회원의 신상정보를 본인의 승낙없이 제 3자에게 누설, 배포하지 않습니다.단, 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 정보통신윤리위원회의 요청이 있는 경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우에는 그러하지 않습니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 20 조 (회원 이용자ID와 비밀번호 관리에 대한 의무)</dt>
+						<dd>1. 이용자 ID과 비밀번호에 관한 모든 관리책임은 회원에게 있습니다. 회원에게 부여된 이용자 ID와 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원에게 있습니다.</dd>
+						<dd>2. 자신의 이용자 ID, 비밀번호가 부정하게 사용된 경우 회원은 반드시 회사에 그 사실을 통보해야 합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 21 조 (서비스 전반에 관한 회원의 의무)</dt>
+						<dd>1. 회원은 서비스를 이용할 때 다음 각 호의 행위를 하지 않아야 합니다.
+							<ul>
+								<li>1) 다른 회원의 이용자 ID를 부정하게 사용하는 행위 </li>
+								<li>2) 서비스에서 얻은 정보를 회사의 사전승낙 없이 회원의 이용 이외의 목적으로 복제하거나 이를 출판 및 방송 등에 사용하거나 제 3 자에게 제공하는 행위 </li>
+								<li>3) 제3자의 저작권 등 기타 권리를 침해하는 행위 </li>
+								<li>4) 공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형 등을 타인에게 유포하는 행위 </li>
+								<li>5) 범죄와 결부된다고 객관적으로 판단되는 행위 </li>
+								<li> 6) 기타 관계법령에 위배되는 행위 </li>
+							</ul>
+						</dd>
+						<dd>2. 회원은 이 규정에서 규정하는 사항과 서비스 이용안내 또는 주의사항을 준수하여야 합 니다. </dd>
+						<dd>3. 회원은 내용별로 회사가 서비스 공지사항에 게시하거나 별도로 공지한 이용제한 사항을 준수하여야 합니다. </dd>
+						<dd>4. 회원은 회사의 사전승낙 없이는 서비스를 이용하여 영업활동을 할 수 없으며, 영업활동의 결과와 회원이 규정에 위반한 영업활동을 이용하여 발생한 결과에 대하여 회사는 책임을 지지 않습니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 22 조 (정보의 제공)</dt>
+						<dd>1. 회사는 회원이 서비스 이용 중 필요가 있다고 인정되는 다양한 정보에 대해서 전자우편, 유선매체, 서신우편 등의 방법으로 회원에게 제공할 수 있습니다. </dd>
+					</dl>
+					<dl>
+						<dt>제 23 조 (회원의 게시물)</dt>
+						<dd>1. 회사는 회원이 게시하거나 등록하는 서비스내의 내용물이 다음 각 호의 1에 해당한다고 판단되는 경우에 사전통지 없이 삭제할 수 있습니다. 
+							<ul>
+								<li>1) 다른 회원 또는 제3자를 비방하거나 중상모략으로 명예를 손상시키는 내용인 경우 </li>
+								<li>2) 공공질서 및 미풍양속에 위반되는 내용인 경우 </li>
+								<li>3) 범죄적 행위에 결부된다고 인정되는 내용일 경우 </li>
+								<li>4)  제 3 자의 저작권 등 기타 권리를 침해하는 내용인 경우 </li>
+								<li>5) 회사에서 규정한 게시기간을 초과한 경우 </li>
+								<li> 6) 기타 관계법령에 위반된다고 판단되는 경우 </li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 24 조 (회원의 게시물)</dt>
+						<dd>1. 서비스에 게재된 자료에 대한 권리는 다음 각 호와 같습니다.
+							<ul>
+								<li>1) 게시물에 대한 권리와 책임은 게시자에게 있으며 회사는 게시자의 동의 없이는 이를 영리적 목적으로 사용할 수 없습니다. 단, 비영리적인 경우는 그러하지 아니하며 또한 서비스내의 게재권을 갖습니다. </li>
+								<li> 2) 회원은 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 상업적으로 사용할 수 없습니다. </li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제 25 조 (회원의 게시물)</dt>
+						<dd>1. 서비스의 이용은 회사의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴 1일 24시간을 원칙으로 합니다. 다만 정기점검 등의 필요로 회사가 정한 날이나 시간은 그러하지 않습니다.</dd>
+						<dd>2. 회사는 서비스를 일정범위로 분할하여 각 범위별로 이용가능시간을 별도로 정할 수 있으며 이 경우 그 내용을 사전에 공지합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 26 조 (서비스 제공의 중지)</dt>
+						<dd>1. 회사는 다음 각 호에 해당하는 경우 서비스 제공을 중지할 수 있습니다. 
+							<ul>
+								<li>1) 서비스용 설비의 보수 등 공사로 인한 부득이한 경우 </li>
+								<li>2) 전기통신사업법에 규정된 기간통신사업자가 전기통신서비스를 중지했을 경우 </li>
+							</ul>
+						</dd>
+						<dd>2. 회사는 국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 때에는 서비스의 전부 또는 일부를 제한하거나 정지할 수 있습니다. </dd>
+					</dl>
+					<h4>제 5 장 계약해지 및 이용제한</h4>
+					<dl>
+						<dt>제 27 조 (계약해지 및 이용제한)</dt>
+						<dd>1. 회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 온라인을 통해 회사에 해지신청을 하여야 합니다. </dd>
+						<dd>2. 회원은 서비스 이용 시 개인정보의 수집?이용 및 제공에 대해 동의하신 내용을 언제든지 철회하실 수 있으며 이용계약을 해지할 수 있습니다. 개인정보관리 담당자에게 서면, 전화 또는 E-mail 등으로 연락 하시면 지체 없이 귀하의 개인정보를 파기하는 등 필요한 조치를 하겠습니다.
+							<ul>
+								<li>1) 타인의 이용자 ID 및 비밀번호를 도용한 경우 </li>
+								<li>2) 서비스 운영을 고의로 방해한 경우 </li>
+								<li>3) 가입한 이름이 실명이 아닌 경우 </li>
+								<li>4) 공공질서 및 미풍양속에 저해되는 내용을 고의로 유포시킨 경우 </li>
+								<li>5) 회원이 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행하는 경우 </li>
+								<li>6) 타인의 명예를 손상시키거나 불이익을 주는 행위를 한 경우 </li>
+								<li>7) 기타 회사가 정한 이용조건에 위반한 경우</li>
+							</ul>
+						</dd>
+					</dl>
+					<h4>제 6 장 손해배상 등</h4>
+					<dl>
+						<dt>제 28 조 (손해배상)</dt>
+						<dd>1. 회사는 서비스 요금이 무료인 동안의 서비스 이용과 관련하여 회원에게 발생한 어떠한 손해에 관하여도 책임을 지지 않습니다. 서비스 유료화 이후에 관하여는 별도로 정합니다.</dd>
+					</dl>
+					<dl>
+						<dt>제 29 조 (면책조항)</dt>
+						<dd>1. 회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다. </dd>
+						<dd>2. 회사는 회원의 귀책사유로 인한 서비스 이용의 장애에 대하여 책임을 지지 않습니다. </dd>
+						<dd>3. 회사는 회원이 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않습니다. </dd>
+						<dd>4. 회사는 회원이 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 관하여는 책임을 지지 않습니다. </dd>
+					</dl>
+					<dl>
+						<dt>제 30조 (관할법원)</dt>
+						<dd>1. 요금 등 서비스 이용으로 발생한 분쟁에 대해 소송이 제기될 경우 회사의 본사 소재지를 관할하는 법원을 관할법원으로 합니다. </dd>
+					</dl>
+					<h4>제 7 장 민원서비스</h4>
+					<dl>
+						<dt>제 31 조 (개인정보에 관한 민원서비스)</dt>
+						<dd>회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.</dd>
+					</dl>
+					<ul class="list1">
+						<li>고객서비스담당 부서 : Global HR 기업문화팀</li>
+						<li>전화번호 : 02-6244-2345</li>
+						<li>이메일 : news.imando@halla.com</li>
+						<li>개인정보관리책임자 성명 : 박미나 과장</li>
+					</ul>
+					<p>회원은 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.</p>
+					<p>※ 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.</p>
+					<ul class="list1 list2">
+						<li>1.개인분쟁조정위원회 (www.1336.or.kr/1336)</li>
+						<li>2.정보보호마크인증위원회 (www.eprivacy.or.kr/02-580-0533~4)</li>
+						<li>3.대검찰청 인터넷범죄수사센터 (http://icic.sppo.go.kr/02-3480-3600)</li>
+						<li>4.경찰청 사이버테러대응센터 (www.ctrc.go.kr/02-392-0330)</li>
+					</ul>
+					<p>[부칙] <span>(시행일)이 규정은 2008년 12월 22일부터 시행합니다.</span></p>
+				</div>
+			</div>
+			<div class="top_btn">
+				<a href="#"><img src="../web/images/common/top.jpg" alt="맨위로"/></a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="foot_btn">
+			<div class="f_site">
+				<ul>
+					<li class="s1"><a href="#"><span>총무포털</span></a></li>
+					<li class="s2"><a href="#"><span>G-HRM</span></a></li>
+					<li class="s3"><a href="#"><span>우리사주조합</span></a></li>
+					<li class="s4"><a href="#"><span>한라그룹 정도경영</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="family">
+				<button type="button"><span>: :  Family Site</span></button>
+			</div>
+			<div class="foot_l">
+				<div class="adder">
+					<ul>
+						<li><a href="../etc/sub01.html"><span>이용약관</span></a></li>
+						<li class="on"><a href="../etc/sub02.html"><span>개인정보처리방침</span> </a></li>
+						<li><a href="../etc/sub03.html"><span>이메일무단수집거부</span></a></li>
+						<li><a href="../etc/sub04.html"><span>사이트맵</span></a></li>
+						<li class="bgx"><a href="../etc/sub05.html"><span>Contac us</span></a></li>
+					</ul>
+					<p>경기도 성남시 분당구 판교로 255번길 21  Tel : 02) 6244-2114, Fax : 02) 6244-2997<span> Copyright ⓒ MANDO Corp. All rights reserved.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="f_menu">
+		<ul>
+			<li class="icon1"><a href="#"><img src="../web/images/common/f_menu1.png" alt="home"/></a></li>
+			<li class="icon2"><a href="#"><img src="../web/images/common/f_menu2.png" alt="만도뉴스"/></a></li>
+			<li class="icon3"><a href="#"><img src="../web/images/common/f_menu3.png" alt="감사합니데이"/></a></li>
+			<li class="icon4"><a href="#"><img src="../web/images/common/f_menu4.png" alt="알림"/></a></li>
+		</ul>
+	</div>
+  </div>
+ </BODY>
+</HTML>

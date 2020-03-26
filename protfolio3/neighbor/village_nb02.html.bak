@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 청춘발산마을 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="../web/css/common_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/sub_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/tablet_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/moblie_2018.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="../web/font/noto-sans-korean-webfont-master/css/noto-sans-korean.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/seoulhangang/css/seoulhangang.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/jquery.bxslider.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../web/js/jquery.bxslider.min.js"></script>
+    <script src="../web/js/jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js"></script>
+  <script src="../web/js/jQuery-rwdImageMaps-master/jquery.rwdImageMaps.js"></script>
+ </HEAD>
+
+ <BODY>
+
+	<script>
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+
+		});					
+	</script>
+
+ <div id="wrap">
+  <div id="header">
+	<div class="head">
+		<h1><a href="#"><img src="../web/images/common/logo_2018.png" alt="청춘발산마을"/></a></h1>
+		<div class="menu">
+			<ul>
+				<li ><a href="../intro/village_intro.html">마을소개</a></li>
+				<li ><a href="../village_walk/village_wk01.html">마을산책</a></li>
+				<li ><a href="../neighbor/village_nb01.html">마을이웃</a></li>
+				<li ><a href="../news/village_news01.html">마을소식</a></li>
+			</ul>
+		</div>
+		<div class="mob_menu">
+			<a href="#"><img src="../web/images/common/moblie_menu.png" alt="메뉴더보기"/></a>
+		</div>
+	</div>
+  </div>
+  <div id="container">
+	<div class="contents">
+		<div class="sub_title sub_title_nb">
+			<dl>
+				<dt>마을이웃</dt>
+				<dd>마을의 일상이 문화가 되는 마을</dd>
+			</dl>
+		</div>
+		<div class="sub_cont">
+			<div class="nb_view">
+				<div class="view_info">
+					<h2><span>마을 체험거리</span></h2>
+					<dl>
+						<dt>표류</dt>
+						<dd>아트 스튜디오 겸 아트샵</dd>
+					</dl>
+					<p>운영하시는 작가님의 순수 예술 작품을 공유하고 직접 만든 상품을 판매하는 아트샵, 표류입니다. <span>이용료에 음료가 함께 제공되고, 각 공간마다 새로운 분위기를 자아내는 앤티크한 분위기의 사진 찍기 좋고 전망이 좋은 감성 스튜디오예요.<span> 매월 새로운 구성의 문화예술 프로그램이 준비되어 색다른 재미를 느끼실 수 있어요.</p>
+					<div class="info">
+						<ul class="">
+							<li><span>공간번호</span>  11</li>
+							<li><span>이용시간</span>  am11:00 - pm08:00 (월요 휴무)</li>
+						</ul>
+						<ul class="info_2">
+							<li><span>위치</span> 광주광역시 천변좌로 118번길 9</li>
+							<li><span>문의</span>  인스타그램 @pyo.ryu DM 문의</li>
+						</ul>
+					</div>
+					<div class="view_img">
+						<ul class="bxslider view_box">
+							<li><img src="../web/images/sub/neigbor/view_img01.jpg" alt="표류이미지" class="web_view"/><img src="../web/images/sub/neigbor/view_img01_t.jpg" alt="표류이미지" class="tab_view"/><img src="../web/images/sub/neigbor/view_img01_m.jpg" alt="표류이미지" class="mob_view"/></li>
+							<li><img src="../web/images/sub/neigbor/view_img01.jpg" alt="표류이미지" class="web_view"/><img src="../web/images/sub/neigbor/view_img01_t.jpg" alt="표류이미지" class="tab_view"/><img src="../web/images/sub/neigbor/view_img01_m.jpg" alt="표류이미지" class="mob_view"/></li>
+							<li><img src="../web/images/sub/neigbor/view_img01.jpg" alt="표류이미지" class="web_view"/><img src="../web/images/sub/neigbor/view_img01_t.jpg" alt="표류이미지" class="tab_view"/><img src="../web/images/sub/neigbor/view_img01_m.jpg" alt="표류이미지" class="mob_view"/></li>
+						</ul>
+<!-- 						<div class="view_btn">
+							<a href="javascript:void(0);" class="prev rol_main_prev"><img src="../web/images/sub/village_walk/view_left.png" alt="왼쪽"></a>
+							<a href="javascript:void(0);" class="next rol_main_next"><img src="../web/images/sub/village_walk/view_right.png" alt="오른쪽"></a>
+						</div>
+						<div class="view_list">
+							<ul class="rol_img">
+								<li class="select" id="rol_btn_1"><a href="javascript:main_visual_btn('1')">1번째 버튼</a></li>
+								<li class="" id="rol_btn_2"><a href="javascript:main_visual_btn('2')">2번째 버튼</a></li>
+								<li class="" id="rol_btn_3"><a href="javascript:main_visual_btn('3')">3번째 버튼</a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+
+				<script>
+					$(function(){
+					  $('.bxslider').bxSlider({
+						mode: 'fade'
+					  });
+					});
+				</script>
+
+				<div class="view_map">
+					<h2>위치정보</h2>
+					<img src="../web/images/sub/neigbor/view_map.jpg" alt="마을지도" class="web_map" usemap="#Map_viewmap1"/>
+					<img src="../web/images/sub/neigbor/view_map_t.jpg" alt="마을지도" class="tab_map" usemap="#Map_viewmap2"/>
+					<img src="../web/images/sub/neigbor/view_map_m.jpg" alt="마을지도" class="mob_map" usemap="#Map_viewmap3"/>
+					<div class="list_btn">
+						<a href="#">목록</a>
+					</div>
+					<map name="Map_viewmap1">
+						<area shape="rect" coords="952,460,998,504" href="#" target="_blank" alt="" onfocus="this.blur();"/>
+
+					</map>
+					<map name="Map_viewmap2">
+						<area shape="rect" coords="654,459,700,507" href="#" target="_blank" alt="" onfocus="this.blur();"/>
+
+					</map>
+					<map name="Map_viewmap3">
+						<area shape="rect" coords="493,351,539,395" href="#" target="_blank" alt="" onfocus="this.blur();"/>
+
+					</map>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="footer">
+	<div class="foot">
+		<div class="f_logo">
+			<img src="../web/images/common/f_logo_2018.png" alt="청춘발산마을"/>
+		</div>
+		<div class="add">
+			<div class="address">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 <span>｜ 구주소</span>  광주광역시 서구 양동 440-5번지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com <span>｜ 통신판매업신고번호</span>  제 2016-서울마포-1052호</p>
+				<p><span>전화번호</span>  070-4910-0339 <span>｜ 사업자번호</span>  128-82-85036 <span>｜ 상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="address_m">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com </p>
+				<p><span>상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="sns">
+				<a href="#"><img src="../web/images/common/f_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/i_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/y_2018.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+ </BODY>
+</HTML>

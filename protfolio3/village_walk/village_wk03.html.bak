@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 청춘발산마을 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="../web/css/common_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/sub_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/tablet_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/moblie_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/noto-sans-korean-webfont-master/css/noto-sans-korean.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/seoulhangang/css/seoulhangang.css" type="text/css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ </HEAD>
+
+ <BODY>
+ <div id="wrap">
+  <div id="header">
+	<div class="head">
+		<h1><a href="#"><img src="../web/images/common/logo_2018.png" alt="청춘발산마을"/></a></h1>
+		<div class="menu">
+			<ul>
+				<li ><a href="../intro/village_intro.html">마을소개</a></li>
+				<li ><a href="../village_walk/village_wk01.html">마을산책</a></li>
+				<li ><a href="../neighbor/village_nb01.html">마을이웃</a></li>
+				<li ><a href="../news/village_news01.html">마을소식</a></li>
+			</ul>
+		</div>
+		<div class="mob_menu">
+			<a href="#"><img src="../web/images/common/moblie_menu.png" alt="메뉴더보기"/></a>
+		</div>
+	</div>
+  </div>
+  <div id="container">
+	<div class="contents">
+		<div class="sub_title">
+			<dl>
+				<dt>마을산책</dt>
+				<dd>마을의 일상이 풍경이 되는 골목길</dd>
+			</dl>
+		</div>
+		<div class="board_ser02">
+			<span class="board_all2" id="boa_set2_text">마을산책 추천 코스</span>
+			<label for="boa_set2" class="sor_hide2">마을산책 추천 코스</label>
+			<select id="boa_set2" name="tmp_searchCnd" onchange="cnd_box();">
+			<option value="">지도 및 오디오 가이드</option>
+			<option value="">마을산책 추천 코스</option>
+			<option value="">투어신청</option>
+			</select>
+		</div>
+		<div class="cous_board">
+			<div class="board_ser03">
+				<span class="board_all3" id="boa_set3_text">달콤한 청춘길</span>
+				<label for="boa_set3" class="sor_hide3">달콤한 청춘길</label>
+				<select id="boa_set3" name="tmp_searchCnd" onchange="cnd_box();">
+				<option value="">다정한 청춘길</option>
+				<option value="">달콤한 청춘길</option>
+				<option value="">소소한 청춘길</option>
+				</select>
+			</div>
+		</div>
+		<div class="sub_cont">
+			<div class="walk_tab">
+				<ul class="tab">
+					<li><a href="#"><span>지도 및 오디오 가이드</span></a></li>
+					<li><a href="#" class="on"><span>마을산책 추천 코스</span></a></li>
+					<li><a href="#"><span>투어신청</span></a></li>
+				</ul>
+			</div>
+			<div class="rec_cou">
+				<div class="cou_list">
+					<ul>
+						<li><a href="#">다정한 청춘길</a></li>
+						<li><a href="#" class="on">달콤한 청춘길</a></li>
+						<li><a href="#">소소한 청춘길</a></li>
+					</ul>
+				</div>
+				<div class="download">
+					<a href="#">지도 다운로드</a>
+					<a href="#">오디오 다운로드</a>
+				</div>
+			</div>
+			<div class="map">
+				<div class="map_info">
+					<p>청춘발산마을 홈페이지에서 제공하는 ‘오디오 가이드’와 함께 더욱 특별하고 풍성한 마을산책을 즐기세요.<span>※주민들이 살고 있는 마을입니다. 조용히 둘러봐주세요. 마을 길가에 쓰레기를 버리지 말아주세요.</span></p>
+				</div>
+				<div class="map_img cou_map_img">
+					<div class="map_movimg">
+						<img src="../web/images/sub/village_walk/cous02_img.jpg" alt="다정한 청춘길 코스 이미지" class="web_img"/>
+						<img src="../web/images/sub/village_walk/cous02_img_m.jpg" alt="다정한 청춘길 코스 이미지" class="mob_img"/>
+						<a href="#" class="map_ex"><img src="../web/images/sub/village_walk/map_ex.jpg" alt="지도확대"/></a>
+					</div>
+					<div class="map_list">
+						<h3>달콤한 청춘길<span>알콩달콩 달달하게 공방체험 및 카페투어</span></h3>
+						<ul class="web_list2">
+							<li class="marx"><a href="#"><em>1</em><span>108계단<strong>(포토존)</strong></span></a></li>
+							<li><a href="#"><em>2</em><span>앤카롱<strong>(수제 디저트 카페)</strong></span></a></li>
+							<li><a href="#"><em>3</em><span>발산전망대<strong>(마을 전망대)</strong></span></a></li>
+							<li class="padx"><a href="#"><em>4</em><span>오타쿠 연구소<strong>(아티스트 작업공간)</strong></span></a></li>
+							<li class="padx t_bg"><a href="#"><em>5</em><span>오방협동조합<strong>(마을공방)</strong></span></a></li>
+							<li class="marx last_box"><a href="#"><em>6</em><span>플롱<strong>(베이커리 카페)</strong></span></a></li>
+						</ul>
+<!-- 						<div class="moblie_list">
+							<ul>
+								<li><a href="#" class="on"><span>1</span><strong>108계단 (포토존)</strong></a></li>
+								<li><a href="#"><span>2</span><strong>앤카롱 (수제 디저트 카페)</strong></a></li>
+								<li><a href="#"><span>3</span><strong>발산전망대 (마을 전망대)</strong></a></li>
+								<li><a href="#"><span>4</span><strong>오타쿠 연구소 (아티스트 작업공간)</strong></a></li>
+								<li><a href="#"><span>5</span><strong>오방협동조합 (마을공방)</strong></a></li>
+								<li><a href="#"><span>6</span><strong>플롱 (베이커리 카페)</strong></a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="footer">
+	<div class="foot">
+		<div class="f_logo">
+			<img src="../web/images/common/f_logo_2018.png" alt="청춘발산마을"/>
+		</div>
+		<div class="add">
+			<div class="address">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 <span>｜ 구주소</span>  광주광역시 서구 양동 440-5번지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com <span>｜ 통신판매업신고번호</span>  제 2016-서울마포-1052호</p>
+				<p><span>전화번호</span>  070-4910-0339 <span>｜ 사업자번호</span>  128-82-85036 <span>｜ 상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="address_m">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com </p>
+				<p><span>상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="sns">
+				<a href="#"><img src="../web/images/common/f_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/i_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/y_2018.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+ </BODY>
+</HTML>

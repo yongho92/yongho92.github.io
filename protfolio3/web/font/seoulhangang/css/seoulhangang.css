@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SeoulHangangL";
+  font-style: normal;
+  src: url("../fonts/SeoulHangangL.eot?") format("eot"),
+  url("../fonts/SeoulHangangL.otf") format("opentype"),
+  url("../fonts/SeoulHangangL.woff") format("woff"),
+  url("../fonts/SeoulHangangL.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SeoulHangangM";
+  font-style: normal;
+  src: url("../fonts/SeoulHangangM.eot?") format("eot"),
+  url("../fonts/SeoulHangangM.otf") format("opentype"),
+  url("../fonts/SeoulHangangM.woff") format("woff"),
+  url("../fonts/SeoulHangangM.woff2") format("woff2");
+}

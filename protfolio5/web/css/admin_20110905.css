@@ -1,0 +1,57 @@
+/* CSS Document */
+
+body {margin:0px; font-family:'µ∏øÚ', 'µ∏øÚ√º',dotum; font-size:12px; color:#FFFFFF;}
+a:hover{color:#fff; text-decoration:none;}
+a:link{color:#fff; text-decoration:none;}
+a:visited{color:#fff; text-decoration:none;}
+a:active{color:#fff; text-decoration:none;}
+input {font-size:12px; color:#3a3a3a;}
+
+.top_bg{background:url(../images/admin/top_bg.gif) repeat-x; height:93px;}
+#top .logo{padding: 25px 20px 0 15px;}
+#top .menu_on{background:url(../images/admin/top_menu_on.gif) no-repeat; padding:0 1px 0 1px; min-width:112px; width:112px; height:35px; font-size:12px; text-align:center; vertical-align:middle; font-weight:bold; color:#FFFFFF;}
+#top .menu_off{background:url(../images/admin/top_menu_off.gif) no-repeat; padding:0 1px 0 1px; min-width:112px; width:112px; height:35px; font-size:12px; text-align:center; vertical-align:middle; font-weight:bold; color:#FFFFFF;}
+#top .top_btn{padding-top:10px; padding-right:20px;}
+#top .top_btn td{padding-left:2px;}
+
+#lnb {padding-top:19px; text-align:right;}
+#lnb .title{height:85px; vertical-align:middle; text-align:center;}
+#lnb .lnb_bg{background:url(../images/admin/left_bg02.gif) repeat-y; width:200px;}
+#lnb td{ padding-right:10px;}
+#lnb .menu1{background:url(../images/admin/left_menu1_bg.gif) no-repeat; width:166px; height:33px; /*padding-bottom:11px;*/ font-size:12px; vertical-align:middle; font-weight:bold; color:#FFFFFF;}
+#lnb .menu2_off{color:#FFFFFF; text-align:right; font-size:12px;  vertical-align:middle; padding:10px 0 10px 0; padding-right:7px;}
+#lnb .menu2_on{background:url(../images/admin/left_menu2_on.gif) no-repeat; background-position:100% 50%; text-align:right; font-size:12px; vertical-align:middle; font-weight:bold; padding:10px 0 10px 0; padding-right:7px;}
+
+/* ∏ﬁ¿Œ√ﬂ∞° CSS */
+#main {background:url(../images/admin/main_con_bg.gif) repeat-x top; padding-left:20px;}
+
+
+#contents {min-width:1100px; width:1100px;}
+#contents .title{background:url(../images/admin/con_title_bg.gif) repeat-x; height:35px;}
+#contents .title .menu_txt{font-size:16px; font-weight:bold; padding-left:17px;}
+#contents .title .date_txt{font-size:12px; text-align:right; padding-right:20px;}
+#contents .search {border-top:solid 2px #e0e4e7; border-bottom:solid 2px #e0e4e7;}
+#contents .search .td1{font-size:14px; font-weight:bold; color:#5a6870; background-color:#e8f1f6; height:31px; padding-left:17px;}
+#contents .search .td2{font-weight:bold; color:#80878d; background-color:#f3f8fb; height:46px; padding-left:17px;}
+/*#contents .search .td2 .select1{background:url(../images/admin/con_select_box.gif) 0 1px no-repeat left; width:122px;}*/
+
+#contents .tbl .icon td{ border:none; padding:0 2px 0 2px; text-align:center;}
+#contents .tbl{width:100%;border:1px solid #aecad5; font-size:12px; text-align:center;} 
+#contents .tbl th{padding:7px 0 4px;background-color:#e8f3f9;color:#1d486a;font-weight:bold;}
+#contents .tbl td{padding:6px 0 4px;border-top:1px solid #d7e5e8;color:#3e3f41;}
+#contents .tbl .num{background-color:#e8f3f9; color:#3d5f76;}
+
+#contents .page{font-size:12px;color:#3d5f76;}
+#contents .page a:hover{color:#3d5f76; text-decoration:none;}
+#contents .page a:link{color:#3d5f76; text-decoration:none;}
+#contents .page a:visited{color:#3d5f76; text-decoration:none;}
+#contents .page a:active{color:#3d5f76; text-decoration:none;}
+#contents .page span{padding:0 5px;}
+#contents .page .selected{font-weight:bold;}
+
+#write {min-width:1100px; width:1100px;}
+#write table{border-top:solid 2px #e0e4e7; color:#3e3f41; font-size:12px; font-weight:normal;}
+#write th{border-bottom:solid 1px #e0e4e7; color:#1d486a; font-size:12px; font-weight:normal; height:31px; min-width:155px; width:155px; padding-left:45px;background:url(../images/admin/bullet01.gif) 22px 50% no-repeat #e8f1f6}
+#write td{border-bottom:solid 1px #e0e4e7; color:#3e3f41; font-size:12px; font-weight:normal; height:31px; background-color:#f3f8fb; padding-left:20px;}
+#write .add td{padding-left:0px; border:none;}
+#write .btn{padding:10px 0 10px 0; border:none; border-bottom:solid 2px #e0e4e7;  background-color:#f3f8fb;}

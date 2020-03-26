@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+ <HEAD>
+  <TITLE> 유라코퍼레이션 </TITLE>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+ </HEAD>
+
+ <BODY id="main">
+
+  <div id="map" style="width:100%; height:332px;"></div>
+<script type="text/javascript" src="http://www.dapi.kakao.com/v2/maps/sdk.js?appkey=d0fb55377bd9eebca5f0b58e67c097a9"></script>
+<script type="text/javascript">
+	var mark_display = "y"
+	var mapContainer = document.getElementById('map'), //
+		mapOption = {
+			center: new daum.maps.LatLng(37.5424799848, 126.950922955), //
+			level: 3, //
+			mapTypeId : daum.maps.MapTypeId.ROADMAP // 
+		};
+
+	var mapContainer = document.getElementById('map'), //
+							mapOption = {
+								center: new daum.maps.LatLng(37.5424799848, 126.950922955), //
+								level: 3, // 
+								mapTypeId : daum.maps.MapTypeId.ROADMAP // 
+							};
+
+						// 
+						var map = new daum.maps.Map(mapContainer, mapOption);
+
+						var icon = new daum.maps.MarkerImage(
+							'http://www.bifan.kr/web2017/images/sub/pin.png',
+							new daum.maps.Size(32, 50),
+							new daum.maps.Point(16,34)
+						);
+
+						// 
+						var marker = new daum.maps.Marker({
+							position: new daum.maps.LatLng(37.5424799848, 126.950922955), //
+							//image: icon,
+							map: map // 
+						});
+
+
+
+function init()
+{
+	var center = map.getCenter();
+	//parent.document.getElementById("message2").innerHTML = "latitude : " + map.getCenter().getLat() + "<br />longitude: " + map.getCenter().getLng();
+	//parent.document.frm.info_x.value = map.getCenter().getLng();
+	//parent.document.frm.info_y.value = map.getCenter().getLat();
+}
+
+
+function addrPop()
+{
+    openPopup(window.documentRoot + "bifan_admin/member/search_addr.asp", "search", "450", "400");
+}
+
+function goSearch()
+{
+    document.frm.actEvent.value = "search";
+    submitForm2("_self", "place_info_pop.asp");
+}
+
+function selectInfo()
+{
+    opener.document.frm.info_x.value = document.frm.info_x.value;
+    opener.document.frm.info_y.value = document.frm.info_y.value;
+    self.close();
+}
+</script>
+ </BODY>
+</HTML>

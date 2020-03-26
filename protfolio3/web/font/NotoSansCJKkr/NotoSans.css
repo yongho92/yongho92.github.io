@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "NotoSansCJKkrRegular"; 
+    font-style: normal;
+    font-weight: 300;
+	src: url("NotoSansCJKkrRegular.eot"); 
+	src: local("?"), url("NotoSansCJKkr-Regular-subset.woff") format("woff"), 
+	url("NotoSansCJKkrRegular.otf") format("opentype");
+}
+
+/*
+NotoSansCJKkr-Regular-subset
+¿¹Àü : NotoSansCJKkrRegular
+*/
+
+@font-face{
+    font-family: "NotoSansCJKkrMedium"; 
+	src: url("NotoSansCJKkrMedium.eot"); 
+	src: local("?"), url("NotoSansCJKkrMedium.woff") format("woff"), 
+	url("NotoSansCJKkrMedium.otf") format("opentype");
+}
+
+@font-face{
+    font-family: 'NotoSansCJKkrLight';
+  
+    src:url('NotoSansCJKkrLight.eot') format('embedded-opentype');
+    src:url('NotoSansCJKkrLight.eot?#iefix') format('embedded-opentype');
+    src:url('NotoSansCJKkrLight.woff') format('woff');
+    src:local(¡Ø), url('NotoSansCJKkrLight.woff') format('woff');
+    src: local('?'), url('NotoSansCJKkrLight.woff') format('woff');	
+}
+
+@font-face{
+    font-family: 'NotoSansCJKkrBold';
+  
+    src:url('NotoSansCJKkrBold.eot') format('embedded-opentype');
+    src:url('NotoSansCJKkrBold.eot?#iefix') format('embedded-opentype');
+    src:url('NotoSansCJKkrBold.woff') format('woff');
+    src:local(¡Ø), url('NotoSansCJKkrBold.woff') format('woff');
+    src: local('?'), url('NotoSansCJKkrBold.woff') format('woff');	
+}
+
+
+@font-face {
+  font-family: 'Noto Sans KR1';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR2';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+ }
+
+ @font-face {
+   font-family: 'Noto Sans KR3_1';
+   font-style: normal;
+   font-weight: 500;
+   src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+ }
+
+@font-face {
+   font-family: 'Noto Sans KR4';
+   font-style: normal;
+   font-weight: 500;
+   src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR5';
+   font-style: normal;
+   font-weight: 700;
+   src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR6';
+   font-style: normal;
+   font-weight: 900;
+   src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+ }

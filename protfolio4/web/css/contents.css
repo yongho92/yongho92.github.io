@@ -1,0 +1,149 @@
+ @charset "utf-8";
+
+#container{width:100%; height:100%;}
+
+.main_banner{position:relative;}
+.main_banner .visual{width: 100%; overflow: hidden; position: relative;  height: 1018px;}
+.main_banner .visual ul{overflow:hidden; width:400%;}
+.main_banner .visual ul li{width:100%; height:1018px; float:left; position:relative;}
+.main_banner .visual ul li.visual_1{background:url(../images/main/visual_01.jpg) no-repeat center center;}
+.main_banner .visual ul li.visual_2{background:url(../images/main/visual_02.jpg) no-repeat center center;}
+.main_banner .visual ul li.visual_3{background:url(../images/main/visual_03.jpg) no-repeat center center;}
+.main_banner .visual ul li.visual_4{background:url(../images/main/visual_04.jpg) no-repeat center center;}
+.main_banner .visual_btn{position:absolute; bottom:40px; left:0; width:100%;}
+.main_banner .visual_btn .rolling{width:1180px; margin:0 auto;}
+.main_banner .visual_btn .rolling .rolling_btn{width:125px; margin:0 auto;}
+.main_banner .visual_btn .rolling .rolling_btn .play{margin-bottom:47px;}
+.main_banner .visual_btn .rolling .rolling_btn .next_btn{text-align:center;}
+.main_banner .visual_btn a{margin-left:16px;}
+.main_banner .visual_btn a.frist{margin:0;}
+
+/*비즈니스*/
+.contents{background:url(../images/main/all_bg.png) no-repeat 0 516px;}
+.contents .cont_box1{background:url(../images/main/box1_bg.png) no-repeat 1500px 30px;}
+.contents .business{overflow:hidden; width:1180px; margin:0 auto; padding:81px 0 120px;}
+.contents .title{float:left; top:165px; position:relative;}
+.contents .title h2{color:#bb2025; font-size:54px; line-height: 61px;}
+.contents .title p{color:#222; font-size:22px; margin-top:24px; padding-left:3px;}
+.contents .business .bus_roll{float:left; position:relative; margin-left:90px;}
+.contents .business .bus_roll ul{overflow:hidden;}
+.contents .business .bus_roll ul li{float:left; position:relative; margin-top:20px; width:250px;}
+.contents .business .bus_roll ul li .bus_img{}
+.contents .business .bus_roll ul li .bus_img .img{}
+.contents .business .bus_roll ul li .bus_img .img .img_off{display:none;}
+.contents .business .bus_roll ul li .bus_img .img:after{content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.4);}
+.contents .business .bus_roll ul li .bus_img .txt{position:absolute; bottom:50px; left:34px; z-index:999;}
+.contents .business .bus_roll ul li .bus_img .txt h3{font-size:30px; color:#fff; padding-top:36px;}
+.contents .business .bus_roll ul li .bus_img .txt h3.car{background:url(../images/main/bus_icon1.png) no-repeat 0 0;}
+.contents .business .bus_roll ul li .bus_img .txt h3.bike{background:url(../images/main/bus_icon3.png) no-repeat 0 0;}
+.contents .business .bus_roll ul li .bus_img .txt h3.as{background:url(../images/main/bus_icon2.png) no-repeat 0 0;}
+.contents .business .bus_roll ul li .bus_img .txt p{font-size:24px; color:#fff; line-height:30px;}
+.contents .business .bus_roll ul li .bus_img .txt_on{display:none;}
+.contents .business .bus_roll ul li.on{height:554px; margin-top:0; width:310px; z-index:1;}
+/*.contents .business .bus_roll ul li.on .bus_img .img:before{content: ''; position: absolute; right: 0; bottom: 0; left: 0; height: 294px; z-index: 2; background: #94191d;}*/
+.contents .business .bus_roll ul li.on .bus_img .img_off{display:block;}
+.contents .business .bus_roll ul li.on .bus_img .img_on{display:none;}
+.contents .business .bus_roll ul li.on .bus_img .txt{display:none;}
+.contents .business .bus_roll ul li.on .bus_img .txt_on{display:block;position: absolute; right: 0; bottom: 0; left: 0; height: 294px; z-index: 2; background: #94191d;}
+.contents .business .bus_roll ul li.on .bus_img .txt_on h3{margin:52px 0 0 30px; font-size:30px; color:#fff; line-height:36px;}
+.contents .business .bus_roll ul li.on .bus_img .txt_on p{font-size:14px; color:#fff; line-height:24px; margin:15px 30px 0 30px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #b45e61;}
+.contents .business .bus_roll ul li.on .bus_img .txt_on a{color:#fff; background:url(../images/main/bus_more.png) no-repeat right center; padding-right:23px; margin:24px 0 0 30px;}
+.contents .business .bus_roll ul li.on .bus_img .img:after{content: ''; background:rgba(255,255,255,0);}
+.contents .business .bus_roll .bus_btn{}
+.contents .business .bus_roll .bus_btn a.l_btn{position:absolute; top:250px; left:-18px;}
+.contents .business .bus_roll .bus_btn a.r_btn{position:absolute; top:250px; right:-18px;}
+
+/*브랜드*/
+.contents .title2{top:0; position:relative;}
+.contents .title2 h2{color:#bb2025; font-size:54px; line-height: 61px;}
+.contents .title2 p{color:#222; font-size:22px; margin-top:24px; padding-left:3px;}
+.brand{width:1180px; margin:0 auto;}
+.brand .brand_cont{margin-top:31px; overflow:hidden;  background:url(../images/main/b_cont_bg1.png) no-repeat 44px 293px;}
+.brand .brand_cont .box_txt{float:left; margin:0 140px 0 165px; padding-top:128px;}
+.brand .brand_cont .box_txt h4{color:#333; font-size:34px;}
+.brand .brand_cont .box_txt p{color:#555; font-size:18px; margin-top:15px;}
+.brand .brand_cont .box_txt a{color:#999; font-size:15px; display:block; margin-top:45px; width:167px; height:45px; background:url(../images/main/more_bg.png) no-repeat 0 0; text-align:center; line-height:45px;}
+.brand .brand_cont .box_txt a:hover{background:url(../images/main/more_bg_on.png) no-repeat 0 0; color:#bb2025;}
+.brand .brand_cont .box_txt a:hover span{background:url(../images/main/more_btn2_on.png) no-repeat right center;}
+.brand .brand_cont .box_txt a span{background:url(../images/main/more_btn2.png) no-repeat right center; padding-right:21px;}
+.brand .brand_cont .box_img{float:right; margin-right:30px;}
+.brand .brand_cont .box_img .brand_img02{display:none;}
+.brand .brand_cont .box_img.on .brand_img02{display:block;}
+.brand .brand_cont .box_img.on .brand_img01{display:none;}
+
+.brand .brand_cont2{margin-top:0; background:url(../images/main/b_cont_bg2.png) no-repeat 452px bottom;}
+.brand .brand_cont2 .box_txt{margin:0 0 0 117px; padding-top:90px;}
+.brand .brand_cont2 .box_img{margin-left:32px; float:left;}
+
+.brand .brand_cont3{margin-top:-30px; background:url(../images/main/b_cont_bg4.png) no-repeat 100px 292px;}
+
+/*글로벌 네트워크*/
+.contents .title3{top:165px; float:left;}
+.contents .title3 h2{color:#bb2025; font-size:54px; line-height:61px;}
+.contents .title3 p{color:#222; font-size:22px; margin-top:24px; padding-left:3px;}
+.contents .title3 a{color:#999; font-size:15px; display:block; margin-top:45px; width:167px; height:45px; background:url(../images/main/more_bg.png) no-repeat 0 0; text-align:center; line-height:45px;}
+.contents .title3 a:hover{background:url(../images/main/more_bg_on.png) no-repeat 0 0; color:#bb2025;}
+.contents .title3 a:hover span{background:url(../images/main/more_btn2_on.png) no-repeat right center;}
+.contents .title3 a span{background:url(../images/main/more_btn2.png) no-repeat right center; padding-right:21px;}
+
+.cont_box3{height:878px; background:url(../images/main/global_bg1.png) no-repeat 0 0; margin-top:-120px;}
+.global{overflow:hidden; width:1180px; height:585px; margin:0 auto; padding-top:293px;  background:url(../images/main/global_bg2.png) no-repeat 50px 157px;}
+.global .global_list{float:right; margin:30px 0 0 0;}
+.global .global_list h4{color:#575859; font-size:34px;}
+.global .global_list ul{overflow:hidden; width:275px; margin-top:15px;}
+.global .global_list ul li{color:#555; font-size:15px; line-height:31px; width:105px; float:left; padding-left:30px;}
+.global .global_list ul li.a{background:url(../images/main/a.png) no-repeat 0 center;}
+.global .global_list ul li.b{background:url(../images/main/b.png) no-repeat 0 center;}
+.global .global_list ul li.c{background:url(../images/main/c.png) no-repeat 0 center;}
+.global .global_list ul li.d{background:url(../images/main/d.png) no-repeat 0 center;}
+.global .global_list ul li.e{background:url(../images/main/e.png) no-repeat 0 center;}
+.global .global_list ul li.f{background:url(../images/main/f.png) no-repeat 0 center;}
+.global .global_list ul li.g{background:url(../images/main/g.png) no-repeat 0 center;}
+.global .global_list ul li.h{background:url(../images/main/h.png) no-repeat 0 center;}
+.global .global_list ul li.i{background:url(../images/main/i.png) no-repeat 0 center;}
+
+/*뉴스*/
+.news{width:1180px; margin:0 auto; position:relative;}
+.news .news_big{width:1180px; margin:0 auto; overflow:hidden; padding:120px 0 0 0;}
+.news .title{top:0;}
+.news .title h2{ line-height: 61px;}
+.news .title p{margin-top:24px; padding-left:3px;}
+.news .title a{color:#999; font-size:15px; display:block; margin-top:45px; width:167px; height:45px; background:url(../images/main/more_bg.png) no-repeat 0 0; text-align:center; line-height:45px;}
+.news .title a span{background:url(../images/main/more_btn2.png) no-repeat right center; padding-right:21px;}
+.news .title a:hover{background:url(../images/main/more_bg_on.png) no-repeat 0 0; color:#bb2025;}
+.news .title a:hover span{background:url(../images/main/more_btn2_on.png) no-repeat right center;}
+.news .news_list{float:right; position:relative;}
+.news .news_list ul{overflow:hidden;}
+.news .news_list ul li{float:left; width:284px; margin-left:10px;}
+.news .news_list ul li:first-child{margin-left:0;}
+.news .news_list ul li .news_box{padding:31px 27px; border:1px solid #dedede; height:234px;}
+.news .news_list ul li .news_box strong{color:#333; font-size:16px;}
+.news .news_list ul li .news_box dl{height:180px;}
+.news .news_list ul li .news_box dl dt{color:#333; font-size:20px; line-height:28px; margin-top:10px;}
+.news .news_list ul li .news_box dl dt span{display:block;}
+.news .news_list ul li .news_box dl dd{color:#333; font-size:14px; line-height:20px; margin:10px 0 35px; word-break:keep-all; letter-spacing:-0.1px;}
+.news .news_list ul li .news_box p{color:#333; font-size:14px; overflow:hidden;}
+.news .news_list ul li .news_box p span{float:right; background:url(../images/main/news_view.png) no-repeat 0 center; padding-left:25px;}
+.news .news_list ul li .news_box:hover{border:1px solid #bb2025;}
+.news .news_list ul li .news_box:hover dl dt{color:#bb2025;}
+.news .news_btn{}
+.news .news_btn .l_btn{position:absolute;left: 285px;top: 242px;z-index:  100;}
+.news .news_btn .r_btn{position:absolute;right: -23px;top: 242px;z-index:  100;}
+
+.main_banner .visual ul {overflow:visible;}
+.news .news_list ul li {margin-left:0px;}
+.news .news_list { width:872px;}
+.news .news_list .news_btn .r_btn, .news .news_list .news_btn .l_btn, .contents .business .bus_roll .bus_btn a.r_btn, .contents .business .bus_roll .bus_btn a.l_btn {z-index:100}
+.contents .business .bus_roll {width:810px;}
+.main_banner .visual_btn {z-index:99}
+.contents .business .bus_roll ul li.bus_left{ }
+.contents .business .bus_roll ul li.bus_right{ }
+
+.owl-carousel .owl-item img {width: auto;}
+
+
+/*뉴스버튼*/
+.news .news_arrow{border:1px solid #dadada; width:60px; height:29px; overflow:hidden; margin-top:30px; background:url(../images/main/news_bar.png) no-repeat 29px center;}
+.news .news_arrow a{border: none; background: none; cursor: pointer; width: 30px; margin: 0; float: left; display: block; padding: 4px 0; height: auto; vertical-align: top; line-height: 21px;}
+.news .news_arrow a.news_but{}
+.news .news_arrow a:hover{background:none;}

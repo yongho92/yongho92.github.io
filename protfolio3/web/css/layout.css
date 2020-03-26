@@ -1,0 +1,25 @@
+@charset "utf-8"; 
+#wrap {width: 100%; min-width: 1200px; height: 100%; }
+#header{ width:100%; background:#fff;  position:fixed; top:0; left:0; z-index:100; }
+
+
+#container{ overflow:hidden;}
+#container .cont_box{ width:100%;}
+
+
+#footer{ position:relative; width:100%; background:#000;  }
+
+
+#footer .sns_bx{ width:1199px; margin:0 auto; text-align:center; background:url(/web/images/main/foot_bg.png) center 7px no-repeat; }
+
+#footer .footer_inbox{ width:1200px; margin:0 auto; padding:23px 0; text-align:center; }
+#footer .ftxt_clor{ margin-top:10px; font-size:14px; line-height:22px; color:#808080; font-family: 'FuturaStd-Book'; opacity:0.8; }
+
+.sns_lst{width:74px; margin:0 auto;  }
+.sns_lst:after{display:block; clear:both; content:""; }
+.sns_lst li{ float:left; margin-left:10px;}
+.sns_lst li:first-child{ margin-left:0; }
+
+.sns_lst li .sns_lst01 img{ padding-top:2px; }
+.sns_lst li .sns_lst03 img{ padding-top:2px; }
+

@@ -1,0 +1,159 @@
+ @charset "utf-8";
+
+body {font-family: 'Nanum Square' !important; }
+
+/*硫붿씤鍮꾩���*/
+.visual{position:relative;}
+.visual .bx-wrapper{border:none; box-shadow:none; margin-bottom:0;}
+.visual .bx-controls{position:absolute;bottom:120px;left: 47%;width: 138px;text-align: center;overflow: hidden;}
+.visual .bx-controls-direction{display:none;}
+.visual .bx-wrapper .bx-pager.bx-default-pager a{border-radius:0; background:none; width:9px; height:9px; background-image:url(http://www.halla.com/web/images/2018/main/roll_off.png); background-repeat:no-repeat; background-position:0 center;}
+.visual .bx-wrapper .bx-pager.bx-default-pager a.active{width:26px;}
+/*.visual .bx-wrapper .bx-pager.bx-default-pager a:hover, */.bx-wrapper .bx-pager.bx-default-pager a.active /*.bx-wrapper .bx-pager.bx-default-pager a:focus*/{background-image:url(http://www.halla.com/web/images/2018/main/roll_on.png); background-repeat:no-repeat; background-position:0 center;}*/
+.visual .bx-wrapper .bx-controls-auto .bx-start {display:none; position:absolute; top:0; width:10px; height:15px; background-image:url(http://www.halla.com/web/images/2018/main/play.png); background-repeat:no-repeat; background-position:0 center;}
+.visual .bx-wrapper .bx-controls-auto .bx-stop {position:absolute; top:0; width:12px; height:13px; background-image:url(http://www.halla.com/web/images/2018/main/stop.png); background-repeat:no-repeat; background-position:0 center; }
+.visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{margin-left: 0;}
+.visual { width:100%; height:990px;}
+.visual .visu_list.silde1{background-image:url(http://www.halla.com/web/images/2018/main/visual_02.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visu_list.silde2{background-image:url(http://www.halla.com/web/images/2018/main/visual_03.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visu_list.silde3{background-image:url(http://www.halla.com/web/images/2018/main/visual_04.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visu_list.silde4{background-image:url(http://www.halla.com/web/images/2018/main/visual_05.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visu_list.silde5{background-image:url(http://www.halla.com/web/images/2018/main/visual_06.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visu_list .visual_txt{width:1180px; margin:350px auto 0; text-align:center;}
+.visual .visu_list .visual_txt2{margin:250px auto 0; text-align:left;}
+.visual .visu_list .visual_txt3{margin:230px auto 0;}
+.visual .visu_list .visual_txt p{font-family: 'Nanum Gothic'; font-size:18px; color:#fff; }
+.visual .visu_list .visual_txt p span{ padding-bottom:10px; background:url(http://www.halla.com/web/images/2018/main/main_line.png) no-repeat center bottom;}
+.visual .visu_list .visual_txt dl{margin-top:27px;}
+.visual .visu_list .visual_txt dl dt{font-weight:700; color:#fff; font-size:48px; line-height:60px;}
+.visual .visu_list .visual_txt dl dd{font-family: 'Nanum Gothic'; font-weight:400; color:#fff; font-size:18px;  margin-top:13px;}
+.visual .visu_list .visual_txt a{position:relative; overflow:hidden; font-family: 'Nanum Gothic'; font-size:15px; color:#fff; display:block; width:183px; height:49px; line-height:49px; text-align:center; border:1px solid #dadada; margin:32px auto 0;}
+.visual .visu_list .visual_txt a span{}
+
+.visual .visu_list .visual_txt a:hover{border:1px solid #fff;}
+.visual .visu_list .visual_txt a span{display:block; color:#fff; position:absolute; top:0; left:37px;}
+.visual .visu_list .visual_txt a span:after{content:''; margin-left:14px; display:inline-block; width:7px; height:11px; background:url(http://www.halla.com/web/images/2018/main/more2.png) no-repeat 0 0; vertical-align:middle;}
+.visual .visu_list .visual_txt a:before{content:''; display:block; width:100%; height:100%; opacity:0; margin:0; position:absolute; top:102%; bottom:0; left:0; right:0; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; transition:all .3s ease-in-out;background:#fff;}
+.visual .visu_list .visual_txt a:hover span{color:#000; }
+.visual .visu_list .visual_txt a:hover span:after{background:url(http://www.halla.com/web/images/2018/main/arrow4.png) no-repeat 0 0; }
+.visual .visu_list .visual_txt a:hover:before{top:0; height:100%; background:#fff; opacity:1;}
+
+
+
+.visual .scroll{position:absolute; bottom:9%; width:100%;}
+.visual .scroll p{ text-align:center;}
+.visual .scroll p a{color:#fff; font-weight:700; letter-spacing:3px; font-family: 'Nanum Gothic'; }
+.visual .scroll p span{padding-bottom:50px; background:url(http://www.halla.com/web/images/2018/main/scroll.png) no-repeat center bottom;}
+
+.slick-dots li.v_btn{width:12px; height:15px;}
+.slick-dots li.v_btn a{width:12px; height:15px; background:none; border-radius:0;}
+
+
+/*硫붿씤 �쒕씪�댁뒪*/
+.main_cont{}
+.main_cont .main_box{width:1160px; margin:0 auto; overflow:hidden;}
+.main_cont .main_box .title{text-align:center; margin:138px 0 37px;}
+.main_cont .main_box .title h2{color:#222; font-size:37px; font-weight:700;}
+.main_cont .main_box .title p{color:#666; font-size:17px; font-family: 'Nanum Gothic'; margin-top:15px;}
+
+.main1{height:900px; width:100%; background:url(http://www.halla.com/web/images/2018/main/main_bg1.jpg) no-repeat center center; background-size:cover;}
+.main1 .news{}
+.main1 .news ul{overflow:hidden;}
+.main1 .news ul li{float:left; margin-left:20px;}
+.main1 .news ul li.marx{margin-left:0;}
+.main1 .news ul li .news_img{width:275px; height:185px;}
+.main1 .news ul li .news_img img{width:100%; height:100%;}
+.main1 .news ul li .news_txt{background:#fff; overflow:hidden; padding:0 0 31px 21px;}
+.main1 .news ul li .news_txt dl{}
+.main1 .news ul li .news_txt dl dt{color:#3f68b8; font-size:14px; font-family: 'Nanum Gothic'; font-weight:700; margin:20px 0 10px;}
+.main1 .news ul li .news_txt dl dd{font-size:17px; font-family: 'Nanum Gothic'; line-height:28px; text-overflow:ellipsis;white-space:nowrap;word-wrap:normal; overflow:hidden; width:232px;}
+.main1 .news ul li .news_txt dl dd a{color:#666; }
+.main1 .news ul li .news_txt dl dd span{display:block;}
+.main1 .news ul li .news_txt span.data{font-size:14px; color:#999; font-family: 'Nanum Gothic'; margin-top:35px; display:block;}
+.main1 .news ul li:hover .news_txt{background:#3f68b8;}
+.main1 .news ul li:hover .news_txt dl dt{color:#fff;}
+.main1 .news ul li:hover .news_txt dl dd a{color:#fff;}
+.main1 .news ul li:hover .news_txt span.data{color:#fff;}
+.main1 .news .more_btn{}
+.main1 .news .more_btn a{margin:89px auto 0; position:relative; overflow:hidden; color:#666; font-size:15px; display:block; font-family: 'Nanum Gothic'; border:1px solid #dadada; width:183px; height:49px; line-height:49px; text-align:center;}
+.main1 .news .more_btn a span{display:block; color:#666; position:absolute; top:0; left:37px;}
+.main1 .news .more_btn a span:after{content:''; margin-left:14px; display:inline-block; width:7px; height:11px; background:url(http://www.halla.com/web/images/2018/common/more.png) no-repeat 0 0; vertical-align:middle;}
+.main1 .news .more_btn a:before{content:''; display:block; width:100%; height:100%; opacity:0; margin:0; position:absolute; top:102%; bottom:0; left:0; right:0; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; transition:all .3s ease-in-out;background:#3f68b8;}
+.main1 .news .more_btn a:hover span{color:#fff; }
+.main1 .news .more_btn a:hover span:after{background:url(http://www.halla.com/web/images/2018/main/arrow2.png) no-repeat 0 0; }
+.main1 .news .more_btn a:hover:before{top:0; height:100%; background:#3f68b8; opacity:1;}
+
+/*硫붿씤 �④퍡�섎뒗 �쒕씪*/
+.main2{padding-bottom:149px;}
+.main2 .we_cont{overflow:hidden;}
+.main2 .we_cont .we_box{float:left; position:relative;}
+.main2 .we_cont .we_box1{width:670px; height:290px; background:url(http://www.halla.com/web/images/2018/main/we_01.jpg) no-repeat 0 0; margin-bottom:20px;}
+.main2 .we_cont .we_box2{width:470px; height:290px; background:url(http://www.halla.com/web/images/2018/main/we_02.jpg) no-repeat 0 0; margin:0 0 20px 19px;}
+.main2 .we_cont .we_box3{width:470px; height:290px; background:url(http://www.halla.com/web/images/2018/main/we_03.jpg) no-repeat 0 0;}
+.main2 .we_cont .we_box4{width:670px; height:290px; background:url(http://www.halla.com/web/images/2018/main/we_04.jpg) no-repeat 0 0; margin-left:19px;}
+.main2 .we_cont .we_box h3{font-size:26px; color:#fff; font-weight:700; margin:44px 0 0 41px;}
+.main2 .we_cont .we_box .we_on{position:absolute; top:0; left:0; background:url(http://www.halla.com/web/images/2018/main/we_bg.png) repeat-x 0 0; width:100%; height:100%; display:none;}
+.main2 .we_cont .we_box .we_on h3{}
+.main2 .we_cont .we_box .we_on p{color:#fff; font-size:16px; line-height:26px; margin:10px 0 0 41px; font-family: 'Nanum Gothic';}
+.main2 .we_cont .we_box .we_on p span{display:block;}
+.main2 .we_cont .we_box .we_on a{color:#fff; position:relative; overflow:hidden; font-size:14px; display:block; font-family: 'Nanum Gothic'; border:1px solid #fff; width:159px; height:45px; line-height:45px; text-align:center; margin:51px 0 0 41px; background:none;}
+.main2 .we_cont .we_box .we_on a span{display:block; color:#fff; position:absolute; top:0; left:30px;}
+.main2 .we_cont .we_box .we_on a span:after{content:''; margin-left:14px; display:inline-block; width:7px; height:11px; background:url(http://www.halla.com/web/images/2018/main/arrow2.png) no-repeat 0 0; vertical-align:middle;}
+.main2 .we_cont .we_box .we_on a:before{content:''; display:block; width:100%; height:100%; opacity:0; margin:0; position:absolute; top:102%; bottom:0; left:0; right:0; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; transition:all .3s ease-in-out;background:#fff;}
+.main2 .we_cont .we_box .we_on a:hover span{color:#666; }
+.main2 .we_cont .we_box .we_on a:hover span:after{background:url(http://www.halla.com/web/images/2018/main/arrow4.png) no-repeat 0 0; }
+.main2 .we_cont .we_box .we_on a:hover:before{top:0; height:100%; background:#fff; opacity:1;}
+
+
+/*硫붿씤 �몄옱*/
+.main3{height:900px; width:100%; background:url(http://www.halla.com/web/images/2018/main/main_bg2.jpg) no-repeat center center; background-size:cover;}
+.main3 .main_box .title{margin:178px 0 37px;}
+.main3 .car_cont{overflow:hidden;}
+.main3 .car_cont .car_l{width:525px; height:351px; background:url(http://www.halla.com/web/images/2018/main/car_01.jpg) no-repeat 0 0; padding:49px 0 0 45px; float:left;}
+.main3 .car_cont .car_l dl{}
+.main3 .car_cont .car_l dl dt{color:#fff; font-size:26px; font-weight:700;}
+.main3 .car_cont .car_l dl dd{color:#fff; font-size:16px; line-height:26px; margin-top:10px; font-family: 'Nanum Gothic';}
+.main3 .car_cont .car_l dl dd span{display:block;}
+.main3 .car_cont .car_l .more{color:#fff; position:relative; overflow:hidden; font-size:14px; display:block; font-family: 'Nanum Gothic'; border:1px solid #fff; width:159px; height:45px; line-height:45px; text-align:center; margin-top:51px;}
+
+.main3 .car_cont .car_l .more span{display:block; color:#fff; position:absolute; top:0; left:30px;}
+.main3 .car_cont .car_l .more span:after{content:''; margin-left:14px; display:inline-block; width:7px; height:11px; background:url(http://www.halla.com/web/images/2018/main/arrow2.png) no-repeat 0 0; vertical-align:middle;}
+.main3 .car_cont .car_l .more:before{content:''; display:block; width:100%; height:100%; opacity:0; margin:0; position:absolute; top:102%; bottom:0; left:0; right:0; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; transition:all .3s ease-in-out;background:#fff;}
+.main3 .car_cont .car_l .more:hover span{color:#666; }
+.main3 .car_cont .car_l .more:hover span:after{background:url(http://www.halla.com/web/images/2018/main/arrow4.png) no-repeat 0 0; }
+.main3 .car_cont .car_l .more:hover:before{top:0; height:100%; background:#fff; opacity:1;}
+
+.main3 .car_cont .car_r{float:right;}
+.main3 .car_cont .car_r .car_box{width:521px; height:154px; padding:36px 0 0 49px;}
+.main3 .car_cont .car_r .car_box1{background:url(http://www.halla.com/web/images/2018/main/car_bg1.png) no-repeat right 0; background-color:#fff; }
+.main3 .car_cont .car_r .car_box2{margin-top:20px; background:url(http://www.halla.com/web/images/2018/main/car_bg2.png) no-repeat right 0; background-color:#fff;}
+.main3 .car_cont .car_r .car_box dl{}
+.main3 .car_cont .car_r .car_box dl dt{color:#222; font-size:26px; font-weight:700;}
+.main3 .car_cont .car_r .car_box dl dd{color:#666; font-size:16px; line-height:26px; margin:10px 0 20px; font-family: 'Nanum Gothic';}
+.main3 .car_cont .car_r .car_box dl dd span{display:block;}
+.main3 .car_cont .car_r .car_box .more{color:#666; font-size:13px; font-family: 'Nanum Gothic'; }
+.main3 .car_cont .car_r .car_box .more span{padding-right:14px; background:url(http://www.halla.com/web/images/2018/main/arrow4.png) no-repeat right center;}
+.main3 .car_cont .car_r .car_box .more:hover{color:#0c4da2; border-bottom:1px solid #0c4da2;}
+.main3 .car_cont .car_r .car_box .more:hover span{ background:url(http://www.halla.com/web/images/2018/main/arrow3.png) no-repeat right center;}
+
+.we_box a.bg{cursor:default;}
+.we_box0{width:670px; height:290px; }
+.we_box0 a{display:block; width:100%; height:100%; background: url(http://www.halla.com/web/images/2018/main/we_01.jpg) repeat-x 0 0; overflow:hidden;}
+.we_box2 a{display:block; width:100%; height:100%; background: url(http://www.halla.com/web/images/2018/main/we_02.jpg) repeat-x 0 0; overflow:hidden;}
+.we_box3 a{display:block; width:100%; height:100%; background: url(http://www.halla.com/web/images/2018/main/we_03.jpg) repeat-x 0 0; overflow:hidden;}
+.we_box4 a{display:block; width:100%; height:100%; background: url(http://www.halla.com/web/images/2018/main/we_04.jpg) repeat-x 0 0; overflow:hidden;}
+
+.main_v{position:relative;}
+
+#load {
+	
+	width:100%; height:89px;
+	top: 38%;
+	left: 0;
+	position: absolute;
+	display: block;
+	
+	z-index: 99;
+	text-align: center;
+}
+#load img{display:inline;}

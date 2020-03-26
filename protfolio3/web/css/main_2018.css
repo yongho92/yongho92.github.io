@@ -1,0 +1,32 @@
+ @charset "utf-8";
+
+
+#container{width:100%;}
+.main_cont{}
+.main_cont ul{  position:relative;}
+.main_cont ul li{width:100%; height:826px; overflow:hidden;}
+.main_cont ul li.cont01{background-image:url(../images/main/main_2018_01.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.main_cont ul li.cont02{background-image:url(../images/main/main_2018_02.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.main_cont ul li.cont03{background-image:url(../images/main/main_2018_03.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.main_cont ul li.cont04{background-image:url(../images/main/main_2018_04.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.main_cont ul li .main_txt{text-align:center; width:450px; height:161px; background-image:url(../images/main/bg.png); background-repeat: repeat; margin:196px auto 0; overflow:hidden;}
+.main_cont ul li .main_txt p{color:#fff; font-size:22px; line-height:50px; margin-top:30px;}
+.main_cont ul li .main_txt p span{font-size:38px; display:block; font-family: "SeoulHangangM";}
+.main_cont ul li .arrow{text-align:center; margin-top:400px;}
+
+.main_cont .bx-wrapper{margin-bottom:0; z-index:100;}
+.main_cont .bx-wrapper .bx-controls{position: absolute; bottom: 20px; z-index: 999; width: 100%; text-align: center; overflow: hidden; left: 48%;}
+.main_cont .bx-wrapper .bx-pager.bx-default-pager a{background:url(../images/main/roll_off.png) no-repeat 0 0; width:12px; height:13px;}
+.main_cont .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.main_cont .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.main_cont .bx-wrapper .bx-pager.bx-default-pager a:focus{background:url(../images/main/roll_on.png) no-repeat 0 0;}
+.main_cont .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{float:left; width:100px; position: static; padding-top:0; margin-left:10px;}
+.main_cont .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{position:static; float:left;}
+.main_cont .bx-wrapper .bx-controls-auto .bx-start{width:10px; height:13px; background:url(../images/main/m_play.png) no-repeat 0 0;}
+.main_cont .bx-wrapper .bx-controls-auto .bx-stop{width:11px; height:13px; background:url(../images/main/m_stop.png) no-repeat 0 0; }
+.main_cont .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.main_cont .bx-wrapper .bx-controls-auto .bx-stop.active,
+.main_cont .bx-wrapper .bx-controls-auto .bx-stop:focus{background-position:0 0;}
+.main_cont .bx-wrapper .bx-controls-auto .bx-start:hover,
+.main_cont .bx-wrapper .bx-controls-auto .bx-start.active,
+.main_cont .bx-wrapper .bx-controls-auto .bx-start:focus{background-position:0 0;}

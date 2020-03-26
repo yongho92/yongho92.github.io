@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 청춘발산마을 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="../web/css/common_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/sub_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/tablet_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/css/moblie_2018.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/noto-sans-korean-webfont-master/css/noto-sans-korean.css" type="text/css" rel="stylesheet" />
+  <link href="../web/font/seoulhangang/css/seoulhangang.css" type="text/css" rel="stylesheet" />
+
+ </HEAD>
+
+ <BODY>
+ <div id="wrap">
+  <div id="header">
+	<div class="head">
+		<h1><a href="#"><img src="../web/images/common/logo_2018.png" alt="청춘발산마을"/></a></h1>
+		<div class="menu">
+			<ul>
+				<li ><a href="../intro/village_intro.html">마을소개</a></li>
+				<li ><a href="../village_walk/village_wk01.html">마을산책</a></li>
+				<li ><a href="../neighbor/village_nb01.html">마을이웃</a></li>
+				<li ><a href="../news/village_news01.html">마을소식</a></li>
+			</ul>
+		</div>
+		<div class="mob_menu">
+			<a href="#"><img src="../web/images/common/moblie_menu.png" alt="메뉴더보기"/></a>
+		</div>
+	</div>
+  </div>
+  <div id="container">
+	<div class="contents">
+		<div class="sub_title">
+			<dl>
+				<dt>마을산책</dt>
+				<dd>마을의 일상이 풍경이 되는 골목길</dd>
+			</dl>
+		</div>
+		<div class="board_ser02">
+			<span class="board_all2" id="boa_set2_text">마을산책 추천 코스</span>
+			<label for="boa_set2" class="sor_hide2">마을산책 추천 코스</label>
+			<select id="boa_set2" name="tmp_searchCnd" onchange="cnd_box();">
+			<option value="">지도 및 오디오 가이드</option>
+			<option value="">마을산책 추천 코스</option>
+			<option value="">투어신청</option>
+			</select>
+		</div>
+		<div class="sub_cont">
+			<div class="walk_tab">
+				<ul class="tab">
+					<li><a href="#"><span>지도 및 오디오 가이드</span></a></li>
+					<li><a href="#"><span>마을산책 추천 코스</span></a></li>
+					<li><a href="#" class="on"><span>투어신청</span></a></li>
+				</ul>
+			</div>
+			<div class="tour_app">
+				<p class="tour_tit">마을투어는 매일 2타임으로 진행합니다.<span>각 프로그램을 따로 혹은 같이 신청할 수 있습니다.</span></p>
+				<div class="tour_info">
+					<ul>
+						<li><strong>오전투어  </strong>10:30 ~ 11:30 (최대 20인)</li>
+						<li><strong>오후투어  </strong>15:00 ~ 16:00 (최대 20인)</li>
+						<li class="point">※ 마을단체투어 및 집밥체험 예약은 희망일 2일전~당일취소는 전액환불 불가합니다.</li>
+					</ul>
+				</div>
+				<div class="per_data">
+					<div class="per_d_box">
+						<dl>
+							<dt>1. 개인정보의 수집, 이용, 목적</dt>
+							<dd>- 본인 확인을 위해 최소한의 개인정보가 제공되며 투어예약, 투어시간 변경, 취소, 영수증발급을 위한 목적등 기타 원활한 양질의 서비스 제공을 위해 사용됩니다.</dd>
+							<dd>- 정확한 정보를 제공해주셔야 합니다. 부정확한 정보로 예약사고 발생시 공공미술프리즘에서는책임지지 않습니다.</dd>
+						</dl>
+						<dl>
+							<dt>2. 수집, 이용하려는 개인정보의 항목</dt>
+							<dd>- 수집항목 : 이름, 전화번호, 이메일</dd>
+						</dl>
+						<dl>
+							<dt>3. 개인정보의 보유 및 이용기간</dt>
+							<dd>- 보유기간 : 60일간</dd>
+							<dd>- 제공받은 개인정보는 예약접수 및 투어안내에 이용될 목적이며 투어가 끝난후 보유기간 이후에는 지체없이 파기됩니다.</dd>
+						</dl>
+						<dl>
+							<dt>4. 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. </dt>
+							<dd>그러나 동의를 거부할 경우 청춘발산마을 서비스 이용에 제한을 받을 수 있습니다.</dd>
+						</dl>
+					</div>
+					<p>
+						<input type="checkbox" id="ok" name="ok"/>
+						<label for="ok">개인정보 제공에 동의합니다.</label>
+					</p>
+				</div>
+				<div class="per_ipt">
+					<h3>개인정보 입력</h3>
+					<p class="point_tour">투어신청을 하시려면 아래의 필수항목을 입력하신 후 신청하기 버튼을 클릭해 주시기 바랍니다.</p>
+					<table summary="개인정보 입력"  class="web_app">
+						<caption>개인정보 입력</caption>
+						<tbody>
+							<tr>
+								<th>
+									투어날짜<span>*</span>
+								</th>
+								<td>
+									<label class="labelx" for="day">투어날짜</label>
+									<input type="text" id="day" class="per_i" name="day"/>								
+								</td>
+								<th>투어시간<span>*</span></th>
+								<td>
+									<div class="board_ser04">
+										<span class="board_all4" id="boa_set4_text">오전투어</span>
+										<label for="boa_set4" class="sor_hide4">오전투어</label>
+										<select id="boa_set4" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">오전투어</option>
+										<option value="">오후투어</option>
+										</select>
+									</div>								
+								</td>
+							</tr>
+							<tr>
+								<th>기관<span>*</span></th>
+								<td>
+									<label class="labelx" for="comp">기관</label>
+									<input type="text" id="comp" class="per_i" name="comp"/>	
+								</td>
+								<th>이름<span>*</span></th>
+								<td>
+									<label class="labelx" for="name">이름</label>
+									<input type="text" id="name" class="per_i" name="name" placeholder="작성 예) 홍길동"/>									
+								</td>
+							</tr>
+							<tr>
+								<th>휴대폰<span>*</span></th>
+								<td class="phont_p">
+									<div class="board_ser04 board_ser05">
+										<span class="board_all4 board_all5" id="boa_set5_text">010</span>
+										<label for="boa_set5" class="sor_hide4">010</label>
+										<select id="boa_set5" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">010</option>
+										<option value="">011</option>
+										</select>
+									</div>
+									<span>-</span>
+									<label class="labelx" for="phone">휴대폰</label>
+									<input type="text" id="phone" class="phone" name="phone"/>
+									<span>-</span>
+									<label class="labelx" for="phone2">휴대폰</label>
+									<input type="text" id="phone2" class="phone" name="phone2"/>
+								</td>
+								<th>이메일<span>*</span></th>
+								<td>
+									<label class="labelx" for="email">이메일</label>
+									<input type="text" id="email" class="email" name="email"/>	
+									<span>@</span>
+									<label class="labelx" for="email2">이메일</label>
+									<input type="text" id="email2" class="email" name="email2"/>	
+									<div class="board_ser04 board_ser06">
+										<span class="board_all4 board_all6" id="boa_set6_text">직접입력</span>
+										<label for="boa_set6" class="sor_hide4">직접입력</label>
+										<select id="boa_set6" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">직접입력</option>
+										<option value="">naver.com</option>
+										</select>
+									</div>	
+								</td>
+							</tr>
+							<tr>
+								<th>프로그램<span>*</span></th>
+								<td colspan="3">
+									<input type="checkbox" id="program1" class="per_c" name="program1"/>	
+									<label class="check" for="program1">마을이웃 투어</label>
+									<input type="checkbox" id="program2" class="per_c" name="program2"/>	
+									<label class="check" for="program2">마을해설사 투어</label>
+									<input type="checkbox" id="program3" class="per_c" name="program3"/>	
+									<label class="check" for="program3">주민 집밥 투어</label>
+								</td>
+							</tr>
+							<tr>
+								<th>인원수<span>*</span></th>
+								<td colspan="3">
+									<div class="board_ser04 board_ser06">
+										<span class="board_all4 board_all6" id="boa_set7_text">1명</span>
+										<label for="boa_set7" class="sor_hide4">1명</label>
+										<select id="boa_set7" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">1명</option>
+										<option value="">2명</option>
+										</select>
+									</div>
+									<span class="group">※ 20명이상 단체는 개별 문의 부탁드립니다.</span>
+								</td>
+							</tr>
+							<tr>
+								<th>기타 요청사항<span>*</span></th>
+								<td colspan="3" class="texta">
+									<label for="" class="labelx">기타 요청사항</label>
+									<textarea rows="10" cols="100" style="resize: none; border:1px solid #dadada;" name="text">
+									</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table summary="개인정보 입력" class="tabl_app">
+						<caption>개인정보 입력</caption>
+						<tbody>
+							<tr>
+								<th>
+									투어날짜<span>*</span>
+								</th>
+								<td>
+									<label class="labelx" for="day">투어날짜</label>
+									<input type="text" id="day" class="per_i" name="day"/>								
+								</td>
+							</tr>
+							<tr>
+								<th>기관<span>*</span></th>
+								<td>
+									<label class="labelx" for="comp">기관</label>
+									<input type="text" id="comp" class="per_i" name="comp"/>	
+								</td>
+							</tr>
+							<tr>
+								<th>휴대폰<span>*</span></th>
+								<td class="phont_p">
+									<div class="board_ser04 board_ser05">
+										<span class="board_all4 board_all5" id="boa_set5_text">010</span>
+										<label for="boa_set5" class="sor_hide4">010</label>
+										<select id="boa_set5" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">010</option>
+										<option value="">011</option>
+										</select>
+									</div>
+									<span class="g2">-</span>
+									<label class="labelx" for="phone">휴대폰</label>
+									<input type="text" id="phone" class="phone" name="phone"/>
+									<span class="g2">-</span>
+									<label class="labelx" for="phone2">휴대폰</label>
+									<input type="text" id="phone2" class="phone" name="phone2"/>
+								</td>
+							</tr>
+							<tr>
+								<th>투어시간<span>*</span></th>
+								<td>
+									<div class="board_ser04">
+										<span class="board_all4" id="boa_set4_text">오전투어</span>
+										<label for="boa_set4" class="sor_hide4">오전투어</label>
+										<select id="boa_set4" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">오전투어</option>
+										<option value="">오후투어</option>
+										</select>
+									</div>								
+								</td>								
+							</tr>
+							<tr>
+								<th>이름<span>*</span></th>
+								<td>
+									<label class="labelx" for="name">이름</label>
+									<input type="text" id="name" class="per_i" name="name" placeholder="작성 예) 홍길동"/>									
+								</td>								
+							</tr>
+							<tr>
+								<th>이메일<span>*</span></th>
+								<td>
+									<label class="labelx" for="email">이메일</label>
+									<input type="text" id="email" class="email" name="email"/>	
+									<span class="g">@</span>
+									<label class="labelx" for="email2">이메일</label>
+									<input type="text" id="email2" class="email" name="email2"/>	
+									<div class="board_ser04 board_ser06">
+										<span class="board_all4 board_all6" id="boa_set6_text">직접입력</span>
+										<label for="boa_set6" class="sor_hide4">직접입력</label>
+										<select id="boa_set6" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">직접입력</option>
+										<option value="">naver.com</option>
+										</select>
+									</div>	
+								</td>
+							</tr>
+							<tr>
+								<th>프로그램<span>*</span></th>
+								<td>
+									<input type="checkbox" id="program1" class="per_c" name="program1"/>	
+									<label class="check" for="program1">마을이웃 투어</label>
+									<input type="checkbox" id="program2" class="per_c" name="program2"/>	
+									<label class="check" for="program2">마을해설사 투어</label>
+									<input type="checkbox" id="program3" class="per_c" name="program3"/>	
+									<label class="check" for="program3">주민 집밥 투어</label>
+								</td>
+							</tr>
+							<tr>
+								<th>인원수<span>*</span></th>
+								<td>
+									<div class="board_ser04 board_ser06 board_ser07">
+										<span class="board_all4 board_all6" id="boa_set7_text">1명</span>
+										<label for="boa_set7" class="sor_hide4">1명</label>
+										<select id="boa_set7" name="tmp_searchCnd" onchange="cnd_box();">
+										<option value="">1명</option>
+										<option value="">2명</option>
+										</select>
+									</div>
+									<span class="group">※ 20명이상 단체는 개별 문의 부탁드립니다.</span>
+								</td>
+							</tr>
+							<tr>
+								<th>기타 요청사항<span>*</span></th>
+								<td class="texta">
+									<label for="" class="labelx">기타 요청사항</label>
+									<textarea rows="10" cols="100" style="resize: none; border:1px solid #dadada;" name="text" class="text">
+									</textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="tour_app_btn">
+						<a href="#" class="btn_x">취소하기</a>
+						<a href="#" class="btn_o">신청하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="footer">
+	<div class="foot">
+		<div class="f_logo">
+			<img src="../web/images/common/f_logo_2018.png" alt="청춘발산마을"/>
+		</div>
+		<div class="add">
+			<div class="address">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 <span>｜ 구주소</span>  광주광역시 서구 양동 440-5번지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com <span>｜ 통신판매업신고번호</span>  제 2016-서울마포-1052호</p>
+				<p><span>전화번호</span>  070-4910-0339 <span>｜ 사업자번호</span>  128-82-85036 <span>｜ 상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="address_m">
+				<p><span>신주소</span>  광주광역시 서구 천변좌로 12-16 청춘빌리지 </p>
+				<p><span>e-mail</span>  contact@free-zoom.com </p>
+				<p><span>상호명</span>  공공미술프리즘 <span>｜ 대표자</span>  유다희</p>
+				<p>&copy; FREE-ZOOM CO., LTD. All right reserved.</p>
+			</div>
+			<div class="sns">
+				<a href="#"><img src="../web/images/common/f_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/i_2018.png" alt=""/></a>
+				<a href="#"><img src="../web/images/common/y_2018.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+ </BODY>
+</HTML>

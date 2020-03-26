@@ -1,0 +1,881 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+ <HEAD>
+  <TITLE> With Mando </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link href="../web/css/common.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/sub.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/tablet.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/mobile.css" rel="stylesheet" type="text/css" />
+  <link href="../web/font/Notosans/notosans.css" rel="stylesheet" type="text/css" />
+  <link href="../web/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../web/js/jquery-1.11.0.min.js"></script>
+  <script src="../web/js/jquery.bxslider.min.js" type="text/javascript"></script>
+  <script src="../web/js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../web/js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../web/js/common.js"></script>
+
+  <script type="text/javascript">
+		var rv = '';
+		if (navigator.appName == 'Microsoft Internet Explorer') {
+			var ua = navigator.userAgent;
+			var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null)
+				rv = parseFloat(RegExp.$1);
+		}
+		
+		if (rv == '8' || rv == '7' || rv == '6') {
+			$('#google_translate_element').hide();
+		} else {
+
+			function googleTranslateElementInit() {
+
+				/*
+				if ($('.mob_head').is(':visible')) {
+                    //alert("aa");
+					new google.translate.TranslateElement({
+						pageLanguage: 'ko', includedLanguages: 'ko,af,ar,az,be,bg,bn,bs,ca,ceb,cs,cy,da,de,el,eo,es,et,eu,fa,fi,fr,ga,gl,gu,ha,hi,hmn,hr,ht,hu,hy,id,ig,is,it,iw,ja,jv,ka,kk,km,kn,la,lo,lt,lv,mg,mi,mk,ml,mn,mr,ms,mt,my,nl,no,ny,pa,pl,pt,ro,ru,si,sk,sl,so,sq,sr,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,vi,yi,yo,zu',
+						layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+					}, 'google_translate_element_m');
+
+					$('#google_translate_element').on('click', function () {
+						var spl = $('#google_translate_element_m').html().split('&nbsp;&nbsp;');
+
+						$('#google_translate_element_m').toggle();
+					});
+
+					$(window).scroll(function () {
+						$('.fixed_gnb').css({
+						})
+					});
+				} else {
+				*/
+					new google.translate.TranslateElement({
+						pageLanguage: 'ko', includedLanguages: 'ko,en,ja,es,pt,pl,tr,ta,zh-TW,zh-CN,hi',
+						layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+					}, 'google_translate_element');
+					//$('.skiptranslate').appendTo('.fixed_gnb');
+
+
+					$(window).scroll(function () {
+						$('.fixed_gnb').css({
+						})
+					});
+				//}
+
+
+			}
+
+			var trans_script = $('<script>').appendTo($('head'));
+			trans_script.attr({
+				'type': "text/javascript",
+				'src': "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+				'title': "Translation"
+			})
+		}
+
+
+
+	</script>
+
+ </HEAD>
+
+ <body>
+
+<!-- <div id="google_translate_element"></div> -->
+
+  <div id="wrap">
+	<div id="header">
+		<div class="head_top_box">
+			<div class="head_top">
+				<div class="mob_ser">
+					<ul>
+						<li><a href="#"><img src="../web/images/common/sear_btn.png" alt="검색" class="ser_btn"/><img src="../web/images/common/t_menu_on.png" alt="검색닫기" class="ser_clo"/></a>
+							<div class="m_sear_box">
+								<div class="sear_cont">
+									<div class="sear">
+										<input type="text" id="search_t" name="search" class="sear_ipt" placeholder="검색어를 입력하세요."/>
+										<label for="search_t" class="labelx">검색</label>
+										<button type="button">검색</button>
+										<div class="p_tag">
+											<p>인기태그</p>
+											<ul>
+												<li><a href="#"># 패밀리만도</a></li>
+												<li><a href="#"># 감사합니데이</a></li>
+												<li><a href="#"># 기업문화</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</li>
+					</ul>
+				</div>
+				<div class="head_btn1">
+					<ul>
+						<li class="icon1" id="google_translate_element"></li>
+						<li class="icon2"><a href="#">총무포털</a></li>
+						<li class="icon3"><a href="#">G-HRM</a></li>
+					</ul>
+				</div>
+				<div class="mob_head">
+					<div class="menu_t">
+						<div class="mob_menu">
+							<a href="#" ><img src="../web/images/common/t_menu.png" alt="메뉴보기" class="mob_more"/><img src="../web/images/common/t_menu_on.png" alt="메뉴닫기" class="mob_close"/></a>
+							<div class="mob_menubox">
+								<div class="m_menu_top">
+									<ul>
+										<li class="icon1"><a href="#">판교지킴이</a></li>
+										<li class="icon2"><a href="#">마이페이지</a></li>
+										<li class="icon3"><a href="#"><span>1</span>감사메세지</a></li>
+									</ul>
+								</div>
+								<div class="m_menu">
+									<ul>
+										<li class="nobr"><a href="javascript:;"  class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu1.png" alt="mando" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li><a href="javascript:;" class="depth03"><span class="men_arrow2"><img src="../web/images/common/t_menu2.png" alt="비전/핵심가치" class="mob_img4"/></span></a>
+													<ul>
+														<li><a href="../mando/sub01.html"><img src="../web/images/common/t_menu1_1.png" alt="경영철학" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub03.html"><img src="../web/images/common/t_menu1_2.png" alt="비전" class="mob_img6"/></a></li>
+														<li><a href="../mando/sub02.html"><img src="../web/images/common/t_menu1_3.png" alt="핵심가치" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub05.html"><img src="../web/images/common/t_menu1_4.png" alt="기업문화" class="mob_img5"/></a></li>
+														<li><a href="../mando/sub06.html"><img src="../web/images/common/t_menu1_5.png" alt="자료실 " class="mob_img7"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu3.png" alt="미디어룸" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../media/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu3_1.png" alt="만도뉴스" class="mob_img12"/></span></a>
+												</li>
+												<li class="grbg"><a href="../media/sub02.html" class="depth03"><span><img src="../web/images/common/t_menu3_2.png" alt="MCN TV" class="mob_img13"/></span></a></li>
+												<li><a href="javascript:;" class="depth03"><span class="men_arrow2"><img src="../web/images/common/t_menu3_3.png" alt="만도 소식지" class="mob_img14"/></span></a>
+													<ul>
+														<li><a href="../media/sub03.html"><img src="../web/images/common/t_menu2_1.png" alt="사보 만울림"  class="mob_img8"/></a></li>
+														<li><a href="../media/sub04.html"><img src="../web/images/common/t_menu2_2.png" alt="글로벌 소식지" class="mob_img9"/></a></li>
+														<li><a href="../media/sub06.html"><img src="../web/images/common/t_menu2_3.png" alt="비지니스유닛 소식지"  class="mob_img10"/></a></li>
+														<li><a href="../media/sub07.html"><img src="../web/images/common/t_menu2_4.png" alt="뉴스레터" class="mob_img5"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu4.png" alt="컬쳐스토리" class="mob_img2"/> </span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../culture_story/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu4_1.png" alt="컬쳐스토리" class="mob_img15"/></span></a>
+												<li class="nobr2 grbg"><a href="../culture_story/sub03.html" class="depth03"><span><img src="../web/images/common/t_menu4_2.png" alt="Manstagram" class="mob_img16"/></span></a>
+												</li>
+											</ul>
+										</li>
+
+										<li><a href="../thank/sub01.html" class="depth01"><span><img src="../web/images/common/t_menu5.png" alt="감사합니데이" class="mob_img3"/> </span></a></li>
+										<li><a href="../mantong/sub01.html" class="depth01"><span><img src="../web/images/common/t_menu6.png" alt="만통톡톡" class="mob_img1"/> </span></a></li>
+										<li><a href="javascript:;" class="depth01"><span class="men_arrow"><img src="../web/images/common/t_menu7.png" alt="복지알림" class="mob_img1"/></span></a>
+											<ul class="depth02">
+												<li class="nobr2 grbg"><a href="../welfare/sub01.html" class="depth03"><span><img src="../web/images/common/t_menu7_1.png" alt="사내복지" class="mob_img11"/></span></a>
+												</li>
+												<li class="grbg"><a href="../welfare/sub02.html" class="depth03"><span><img src="../web/images/common/t_menu7_2.png" alt="경조사"  class="mob_img17"/></span></a></li>
+												<li class="grbg"><a href="../welfare/sub03.html" class="depth03"><span><img src="../web/images/common/t_menu7_3.png" alt="식단정보" class="mob_img11"/></span></a>
+												<li class="grbg"><a href="../welfare/sub07.html" class="depth03"><span><img src="../web/images/common/t_menu7_4.png" alt="버스배차" class="mob_img11"/></span></a>
+												</li>
+											</ul>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<h1><a href="../index.html"><img src="../web/images/common/logo.png" alt="with mando"/></a></h1>
+				</div>
+				<div class="head_btn2">
+					<ul>
+						<li class="icon4"><a href="#">판교지킴이</a></li>
+						<li class="icon5"><a href="#">마이페이지</a></li>
+						<li class="icon6"><a href="#"><span>1</span>감사메세지</a></li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+		<div class="head_bot_box">
+			<div class="head_bot">
+				<div class="menu">
+					<div class="all_menu">
+						<a href="#"><img src="../web/images/common/a_menu.png" alt="전체메뉴보기"/></a>
+						<div class="a_menu">
+							<div class="a_top">
+								<div class="a_close">
+									<a href="#">Close</a>
+								</div>
+								<div class="a_logo">
+									<a href="#"><img src="../web/images/common/logo.png" alt="with mando"/></a>
+								</div>
+								<div class="a_r">
+									<ul>
+										<li class="icon1"><a href="#">총무포털</a></li>
+										<li class="icon2"><a href="#">G-HRM</a></li>
+									</ul>									
+								</div>
+							</div>
+							<div class="a_list">
+								<ul>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../mando/sub01.html"><img src="../web/images/common/a_menu_1.png" alt="MANDO"/></a></h3>
+											<ul>
+												<li class="bgx"><a href="../mando/sub01.html"><span><img src="../web/images/common/a_menu_1_1.png" alt="비전·핵심가치"/></span></a>
+													<ul>
+														<li><a href="../mando/sub01.html"><img src="../web/images/common/a_menu_1_1_1.png" alt="경영철학"/></a></li>
+														<li><a href="../mando/sub03.html"><img src="../web/images/common/a_menu_1_1_2.png" alt="비전"/></a></li>
+														<li><a href="../mando/sub02.html"><img src="../web/images/common/a_menu_1_1_3.png" alt="핵심가치"/></a></li>
+														<li><a href="../mando/sub05.html"><img src="../web/images/common/a_menu_1_1_4.png" alt="기업문화"/></a></li>
+														<li><a href="../mando/sub06.html"><img src="../web/images/common/a_menu_1_1_5.png" alt="자료실 "/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../media/sub01.html"><img src="../web/images/common/a_menu_2.png" alt="미디어룸"/></a></h3>
+											<ul>
+												<li><a href="../media/sub01.html"><span><img src="../web/images/common/a_menu_2_1.png" alt="만도뉴스"/></span></a></li>
+												<li><a href="../media/sub02.html"><span><img src="../web/images/common/a_menu_2_2.png" alt="MCN TV"/></span></a></li>
+												<li class="bgx"><a href="../media/sub03.html"><span><img src="../web/images/common/a_menu_2_3.png" alt="만도 소식지"/></span></a>
+													<ul>
+														<li><a href="../media/sub03.html"><img src="../web/images/common/a_menu_2_1_1.png" alt="사보 만울림"/></a></li>
+														<li><a href="../media/sub04.html"><img src="../web/images/common/a_menu_2_1_2.png" alt="글로벌 소식지"/></a></li>
+														<li><a href="../media/sub06.html"><img src="../web/images/common/a_menu_2_1_3.png" alt="사업본부 소식지"/></a></li>
+														<li><a href="../media/sub07.html"><img src="../web/images/common/a_menu_2_1_4.png" alt="뉴스레터"/></a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../culture_story/sub01.html"><img src="../web/images/common/a_menu_3.png" alt="컬쳐스토리"/></a></h3>
+											<ul>
+												<li><a href="../culture_story/sub01.html"><span><img src="../web/images/common/a_menu_3_1.png" alt="컬쳐스토리"/></span></a></li>
+												<li class="bgx"><a href="../culture_story/sub03.html"><span><img src="../web/images/common/a_menu_3_2.png" alt="Manstagram"/></span></a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../thank/sub01.html"><img src="../web/images/common/a_menu_4.png" alt="감사합니데이"/></a></h3>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../mantong/sub01.html"><img src="../web/images/common/a_menu_5.png" alt="만통톡톡"/></a></h3>
+										</div>
+									</li>
+									<li class="on">
+										<div class="a_cont">
+											<h3><a href="../welfare/sub01.html"><img src="../web/images/common/a_menu_6.png" alt="복지알림"/></a></h3>
+											<ul>
+												<li><a href="../welfare/sub01.html"><span><img src="../web/images/common/a_menu_6_1.png" alt="사내복지"/></span></a></li>
+												<li><a href="../welfare/sub02.html"><span><img src="../web/images/common/a_menu_6_2.png" alt="경조사"/></span></a></li>
+												<li><a href="../welfare/sub03.html"><span><img src="../web/images/common/a_menu_6_3.png" alt="식단정보"/></span></a></li>
+												<li class="bgx"><a href="../welfare/sub07.html"><span><img src="../web/images/common/a_menu_6_4.png" alt="버스배차"/></span></a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="a_bot">
+								<div class="a_cont2">
+									<ul>
+										<li><a href="#">이용약관</a></li>
+										<li class="on"><a href="#">개인정보처리방침</a></li>
+										<li><a href="#">이메일무단수집거부</a></li>
+										<li><a href="#">사이트맵 </a></li>
+										<li class="bgx"><a href="#">Contac us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu_box">
+						<ul>
+							<li class="first"><a href="../mando/sub01.html"><img src="../web/images/common/menu_t1.png" alt="MANDO"/></a></li>
+							<li><a href="../media/sub01.html"><img src="../web/images/common/menu_t2.png" alt=" 미디어룸"/></a></li>
+							<li><a href="../culture_story/sub01.html"><img src="../web/images/common/menu_t3.png" alt=" 컬쳐스토리 "/></a></li>
+							<li><a href="../thank/sub01.html"><img src="../web/images/common/menu_t4.png" alt="감사합니데이"/></a></li>
+							<li><a href="../mantong/sub01.html"><img src="../web/images/common/menu_t5.png" alt="만통톡톡"/></a></li>
+							<li><a href="../welfare/sub01.html"><img src="../web/images/common/menu_t6.png" alt="복지알림"/></a></li>
+						</ul>
+						<div class="menu_2">
+							<div class="menu2_box">
+								<div class="menu_2d menu_2d_01">
+									<ul>
+										<li><a href="../mando/sub01.html"><img src="../web/images/common/sub_t1.png" alt="비전 핵심가치"/></a>
+											<ul>
+												<li><a href="../mando/sub01.html"><img src="../web/images/common/sub_m1.png" alt="경영철학"/></a></li>
+												<li><a href="../mando/sub03.html"><img src="../web/images/common/sub_m2.png" alt="비전"/></a></li>
+												<li><a href="../mando/sub02.html"><img src="../web/images/common/sub_m3.png" alt="핵심가치"/></a></li>
+												<li><a href="../mando/sub05.html"><img src="../web/images/common/sub_m4.png" alt="기업문화"/></a></li>
+												<li><a href="../mando/sub06.html"><img src="../web/images/common/sub_m5.png" alt="자료실 "/></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="menu_2d">
+									<ul>
+										<li><a href="../media/sub01.html"><img src="../web/images/common/sub_t2.png" alt="만도뉴스"></a></li>
+										<li><a href="../media/sub02.html"><img src="../web/images/common/sub_t3.png" alt="MCN TV"/></a></li>
+										<li><a href="../media/sub03.html"><img src="../web/images/common/sub_t4.png" alt="만도 소식지"/></a>
+											<ul>
+												<li><a href="../media/sub03.html"><img src="../web/images/common/sub_m6.png" alt="사보 만울림"/></a></li>
+												<li><a href="../media/sub04.html"><img src="../web/images/common/sub_m7.png" alt="글로벌 소식지"/></a></li>
+												<li><a href="../media/sub06.html"><img src="../web/images/common/sub_m8.png" alt="비지니스유닛 소식지"/></a></li>
+												<li><a href="../media/sub07.html"><img src="../web/images/common/sub_m9.png" alt="뉴스레터"/></a></li>
+											</ul>
+										</li>								
+									</ul>
+								</div>
+								<div class="menu_2d menu_2d_02">
+									<ul>
+										<li><a href="../culture_story/sub01.html"><img src="../web/images/common/sub_t5.png" alt="컬쳐스토리"/></a></li>
+										<li><a href="../culture_story/sub03.html"><img src="../web/images/common/sub_t6.png" alt="Manstagram"/></a></li>
+									</ul>	
+								</div>
+								<div class="menu_2d menu_2d_03">
+									<ul>
+										<li><a href="../welfare/sub01.html"><img src="../web/images/common/sub_t7.png" alt="사내복지"/></a></li>
+										<li><a href="../welfare/sub02.html"><img src="../web/images/common/sub_t8.png" alt="경조사"/></a></li>
+										<li><a href="../welfare/sub03.html"><img src="../web/images/common/sub_t9.png" alt="식단정보"/></a></li>
+										<li><a href="../welfare/sub07.html"><img src="../web/images/common/sub_t10.png" alt="버스배차"/></a></li>
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<a href="#"><img src="../web/images/common/search.png" alt="검색"/></a>
+						<div class="sear_box">
+							<div class="sear_cont">
+								<div class="close">
+									<a href="#" class="aaa"><img src="../web/images/common/close.png" alt="검색닫기"/></a>
+								</div>
+								<div class="sear">
+									<input type="text" id="search" name="search" class="sear_ipt" placeholder="검색어를 입력하세요."/>
+									<label for="search" class="labelx">검색</label>
+									<button type="button">검색</button>
+									<div class="p_tag">
+										<p>인기태그</p>
+										<ul>
+											<li><a href="#"># 만도가족</a></li>
+											<li><a href="#"># 위드만도</a></li>
+											<li><a href="#"># 감사합니데이</a></li>
+											<li><a href="#"># 윤곡상</a></li>
+											<li><a href="#"># 주부아카데미</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="comm_box">
+			<div class="s_title">
+				<div class="s_tit_box">
+				<h2><img src="../web/images/sub/tnk_txt.jpg" alt="감사합니데이"/><img src="../web/images/sub/tab_txt23_on.png" alt="감사합니데이" class="m_subtit4 m_subtit"/></h2>
+				</div>
+			</div>
+			<div class="sub_tab sub_tab_5">
+				<ul>
+					<li class="on"><a href="#"><img src="../web/images/sub/tab_txt22_on.png" alt="감사합니데이" class="tab2_txt12"/></a></li>
+				</ul>
+			</div>
+			<div class="s_cont pop_po">
+				<div class="cont_l">
+					<div class="tnk_cont">
+						<div class="tnk_upl">
+							<!-- 190214 팝업 -->
+							<div class="tnk_pop">
+								<button type="button" class="mem_btn"><span>메시지 받을 멤버 선택</span></button>
+								<p class="tnk_to">@ Suspension Div. 김태연 주임연구원 </p>
+								<div class="pop_box">
+									<div class="t_popup">
+										<div class="pop_t">
+											<p>메세지 받을 멤버 선택</p>
+											<div class="pop_cont">
+												<div class="s_ser">
+													<div class="sub_search">
+														<div class="n_sear selectbox">
+															<dl class="dropdown">
+																<dt><a href="javascript:void(0);"><span>이름</span></a></dt>
+																<dd>
+																	<ul class="dropdown2" style="display: none;">
+																		<li><a href="javascript:void(0);">이름</a></li>
+																		<li><a href="javascript:void(0);">닉네임</a></li>
+																		<li><a href="javascript:void(0);">아이디</a></li>
+																		<li><a href="javascript:void(0);">부서</a></li>
+																	</ul>
+																</dd>
+															</dl>
+														</div>
+														<div class="sub_ser">
+															<label class="labelx">검색</label>
+															<input type="text" id="tmp_str" class="search" name="tmp_str" value="" autocomplete="off">
+															<button type="button" id="btnList">검색</button>
+														</div>
+													</div>
+												</div>
+												<div class="mem_list">
+													<table>
+														<caption>멤버선택</caption>
+														<thead>
+															<tr>
+																<th class="wi1">선택</th>
+																<th class="wi2">이름</th>
+																<th class="wi3">아이디</th>
+																<!-- <th class="wi4">닉네임</th> -->
+																<th class="wi5">부서</th>
+																<th class="wi6">회원구분</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<label for="mem_btn1" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn1" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Corporate Culture</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+															<tr>
+																<td>
+																	<label for="mem_btn2" class="labelx">선택</label>
+																	<input type="radio" id="mem_btn2" name="mem_btn1"/>
+																</td>
+																<td>박미나</td>
+																<td>mina.park</td>
+																<!-- <td>미나킴</td> -->
+																<td class="bel">Global EBS PM</td>
+																<td>임직원</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="popup_btn">
+												<a href="#" class="p_btn1">확인</a>
+												<a href="#">취소</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- -->
+							<div class="tnk_uplbox">
+							<label for="tnk_top" class="labelx">글입력</label>
+							<textarea id="tnk_top" rows="6" cols="" name="tnk_top" required="" placeholder="함께 일하는 동료, 상사, 후배… 일상의 작은 고마움을 칭찬으로 표현해주세요." class="textarea2" style="resize:none; border:none;"></textarea>
+							<a href="#" class="tnk_img">사진/이미지</a>
+							<a href="#">감사메세지 보내기</a>
+							</div>
+						</div>
+						<div class="tnk_tab">
+							<ul>
+								<li class="on marx"><a href="#"><span class="bgx">전체</span></a></li>
+								<li class="wi2"><a href="#"><span class="bgx">감사 이벤트</span></a></li>
+								<li class="wi3"><a href="#"><span>받은 감사메세지<span class="num">2</span></span></a></li>
+								<li><a href="#"><span class="bgx">보낸 감사메세지</span></a></li>
+							</ul>
+						</div>
+						<div class="tnk_box1">
+							<div class="tnk_txtbox">
+								<div class="tnk_icon">
+									<img src="../web/images/sub/tnk_icon1_1.png" alt="기업문화팀" class="icon1"/>
+								</div>
+								<div class="tnk_txt">
+									<h5>기업문화팀<span>2018-10-30</span></h5>
+									<p><strong>[ 감사 이벤트 ]</strong>
+										<span>★ 10월 감사합니데이(Day) 이벤트 결과!</span> 선정되신분들 축하합니다.
+									</p>
+								</div>
+							</div>
+							<ul class="tnk_rev">
+								<li class="rev"><a href="javascript:void(0);" class="tnk_revbtn">댓글 0개</a></li>
+								<li><a href="#"><img src="../web/images/sub/tnk_icon10.png" alt="좋아요"/><span>좋아요 2명</span></a></li>
+							</ul>
+							<div class="review_box">
+								<div class="tnk_rev_bg">
+									<label for="review" class="labelx">댓글등록</label>
+									<input type="text" id="review" class="re_ipt" name="review" placeholder="댓글을 입력하세요.">
+									<button type="button">댓글 등록</button>
+								</div>
+							</div>
+						</div>
+						<div class="tnk_box1">
+							<div class="tnk_txtbox">
+								<div class="tnk_icon tnk_icon_bg">
+									<img src="../web/images/sub/re_icon.png" alt="내용감동 만도인" class="icon2 bg_txt"/>
+									<div class="icon_bg">
+										<span>내용감동 만도인</span>
+									</div>
+								</div>
+								<div class="tnk_txt">
+									<h5>만도인<span>2018-10-30</span></h5>
+									<p><strong>장병진</strong>님 감사합니다.
+										<span>모터 협력사와 만도 설계자 중간에서 서로 이해하고 소통하고 조율해주는 </span>중간다리 역할을 잘 해주고 있어 감사합니다.
+									</p>
+								</div>
+							</div>
+							<ul class="tnk_rev">
+								<li class="rev"><a href="javascript:void(0);" class="tnk_revbtn">댓글 1개</a></li>
+								<li><a href="#"><img src="../web/images/sub/tnk_icon10_on.png" alt="좋아요"/><span>좋아요 2명</span></a></li>
+							</ul>
+							<div class="review_box">
+								<div class="tnk_rev_bg">
+									<label for="review" class="labelx">댓글등록</label>
+									<input type="text" id="review" class="re_ipt" name="review" placeholder="댓글을 입력하세요.">
+									<button type="button">댓글 등록</button>
+								</div>
+								<ul>
+									<li>
+										<div class="rev_img">
+											<img src="../web/images/sub/tnk_icon5.png" alt="댓글아이콘"/>
+										</div>
+										<div class="tnk_revtxt">
+											<p><span>만도다리</span> 중간다리 역할이 중요한데 멋지시네요.<a href="#" class="tnk_btn">답글</a><a href="#">삭제</a></p>
+											<div class="tnk_rev2">
+												<ul>
+													<li><p><span>만도럽</span> 저도모터 협력사와 의견 차이가 있었을때 장병진님께서  중간다리 역할로 나서서 대화를 잘 풀어 나갈 수 있게 도와주셨습니다.<a href="#" class="tnk_btn">답글</a><a href="#">삭제</a></p></li>
+												</ul>
+												<div class="rev_ipt">
+													<span>네모</span>
+													<label for="rev_iptb" class="labelx">답글입력</label>
+													<input type="text" id="rev_iptb" name="rev_iptb" placeholder="댓글을 입력하세요.">
+													<button type="button">저장</button>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tnk_box1">
+							<div class="tnk_txtbox">
+								<div class="tnk_icon">
+									<img src="../web/images/sub/re_icon2.png" alt="판교지킴이" class="icon1"/>
+								</div>
+								<div class="tnk_txt">
+									<h5>판교지킴이<span>2018-10-30</span></h5>
+									<p><strong>김형구</strong>님 감사합니다. 항상 가공라인의 일을 도맡아서 처리해 나가는 모습이 멋집니다. <span>더욱 크게 성장하는 모습 기대합니다.</span>
+									</p>
+								</div>
+							</div>
+							<ul class="tnk_rev">
+								<li class="rev"><a href="javascript:void(0);" class="tnk_revbtn">댓글 0개</a></li>
+								<li><a href="#"><img src="../web/images/sub/tnk_icon10.png" alt="좋아요"/><span>좋아요 2명</span></a></li>
+							</ul>
+							<div class="review_box">
+								<div class="tnk_rev_bg">
+									<label for="review" class="labelx">댓글등록</label>
+									<input type="text" id="review" class="re_ipt" name="review" placeholder="댓글을 입력하세요.">
+									<button type="button">댓글 등록</button>
+								</div>
+							</div>
+						</div>
+						<div class="tnk_box1">
+							<div class="tnk_txtbox ">
+								<div class="tnk_icon tnk_icon_bg">
+									<img src="../web/images/sub/re_icon2.png" alt="특급 만도인" class="icon2 bg_txt"/>
+									<div class="icon_bg">
+										<span>특급 만도인</span>
+									</div>
+								</div>
+								<div class="tnk_txt">
+									<h5>만도다리<span>2018-10-30</span></h5>
+									<p><strong>홍재원</strong>님 감사합니다. <span>걸어다니는 지식in 팀장님께 : 감사합니데이 매달 놓치다가 이번달에서야 감사의 마음을 전합니다. </span>업무적으로 사사건건 말씀드리는데 풍부한 경험을 바탕으로 항상 정확하고 올바른 길잡이가 되어 주셔서 감사합니다.  <span>또한 업무 외적으로 다양한 삶의 경험을 나눠 주셔서 많은 것을 배우고 느끼는 올 한해가 되고 있는 것 같아 뿌듯 합니다.</span> 팀장님! 날씨가 추워지고 있는데요 배드민턴 계속 잘 치시고 감기 조심하세요~
+									</p>
+								</div>
+							</div>
+							<ul class="tnk_rev">
+								<li class="rev"><a href="javascript:void(0);" class="tnk_revbtn">댓글 0개</a></li>
+								<li><a href="#"><img src="../web/images/sub/tnk_icon10_on.png" alt="좋아요"/><span>좋아요 2명</span></a></li>
+							</ul>
+							<div class="review_box">
+								<div class="tnk_rev_bg">
+									<label for="review" class="labelx">댓글등록</label>
+									<input type="text" id="review" class="re_ipt" name="review" placeholder="댓글을 입력하세요.">
+									<button type="button">댓글 등록</button>
+								</div>
+							</div>
+						</div>
+						<div class="tnk_box1">
+							<div class="tnk_txtbox">
+								<div class="tnk_icon">
+									<img src="../web/images/sub/re_icon.png" alt="반갑습니다" class="icon1"/>
+								</div>
+								<div class="tnk_txt">
+									<h5>반갑습니다<span>2018-10-30</span></h5>
+									<p><strong>안소현</strong>님 감사합니다. <span>안소현 차장님, 기존 다른 업무들로 바쁘신 와중에도 금번 A-SPICE 심사대응에 수고 많으셨습니다.</span> <span>한숨 돌릴 틈도 없이 또 다른 심사가 다가오고 있지만, 이 또한 잘 이겨낼 것이라 믿습니다.</span> 항상 건강 잘 챙기시고 또 건승하시길 기원합니다. 감사합니다.
+									</p>
+								</div>
+							</div>
+							<ul class="tnk_rev">
+								<li class="rev"><a href="javascript:void(0);" class="tnk_revbtn">댓글 0개</a></li>
+								<li><a href="#"><img src="../web/images/sub/tnk_icon10.png" alt="좋아요"/><span>좋아요 2명</span></a></li>
+							</ul>
+							<div class="review_box">
+								<div class="tnk_rev_bg">
+									<label for="review" class="labelx">댓글등록</label>
+									<input type="text" id="review" class="re_ipt" name="review" placeholder="댓글을 입력하세요.">
+									<button type="button">댓글 등록</button>
+								</div>
+							</div>
+						</div>
+						<div class="sub_more sub_more2">
+							<a href="#">더보기 +</a>
+						</div>
+					</div>
+				</div>
+				<div class="cont_r subSidebar">
+					<div class="new_cont">
+						<h4>최신 콘텐츠</h4>
+						<ul>
+							<li>
+								<dl>
+									<dt><a href="#"><img src="../web/images/sub/cont_1.jpg" alt="한라그룹, 창립 56주년 기념 행사 개최 및 운곡상 특별상 시상"/></a></dt>
+									<dd><a href="#">한라그룹, 창립 56주년 기념 행사 개최 및 운곡상 특별상 시상</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#"><img src="../web/images/sub/cont_2.jpg" alt="만도, 2018 HKMC Tech-show 개최"/></a></dt>
+									<dd><a href="#">만도, 2018 HKMC Tech-show 개최</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#"><img src="../web/images/sub/cont_3.jpg" alt="가즈프롬은행 경영층 일행, 판교 Global R&D Center 방문"/></a></dt>
+									<dd><a href="#">가즈프롬은행 경영층 일행, 판교 Global R&D Center 방문</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#"><img src="../web/images/sub/cont_4.jpg" alt="제 7회 '사랑의 오뚝이 휠체어' 전달식 실시"/></a></dt>
+									<dd><a href="#">제 7회 '사랑의 오뚝이 휠체어' 전달식 실시</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><a href="#"><img src="../web/images/sub/cont_5.jpg" alt="만도, 경기도 자율주행차 '제로셔틀' 업무협약식 참여"/></a></dt>
+									<dd><a href="#">만도, 경기도 자율주행차 '제로셔틀' 업무협약식 참여</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="p_cont">
+						<h4>인기 콘텐츠</h4>
+						<ul>
+							<li>
+								<dl>
+									<dt><img src="../web/images/sub/p_cont1.png" alt="2018년 만도가족어린이문화교실"/></dt>
+									<dd><a href="#">2018년 만도가족 어린이문화교실</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="../web/images/sub/p_cont2.png" alt="만도 배경으로 한 '너도 인간이니?' "/></dt>
+									<dd><a href="#">만도 배경으로 한 '너도 인간이니?' </a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="../web/images/sub/p_cont3.png" alt="만도-네이버랩스, 자율주행 공동연구개발"/></dt>
+									<dd><a href="#">만도-네이버랩스, 자율주행 공동연구개발</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="../web/images/sub/p_cont4.png" alt="2018년 '문화나눔♥사랑나눔' 실시"/></dt>
+									<dd><a href="#">2018년 '문화나눔♥사랑나눔' 실시</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="../web/images/sub/p_cont5.png" alt="2018년 산학장학생 장학증서 수여"/></dt>
+									<dd><a href="#">2018년 산학장학생 장학증서 수여</a></dd>
+								</dl>
+							</li>
+						</ul>
+						<div class="p_more">
+							<a href="#"><span>더보기</span></a>
+						</div>
+					</div>
+					<div class="rec_tag">
+						<h4>추천태그</h4>
+						<ul>
+							<li class="on"><a href="#" class="tag1"># 패밀리만도</a></li>
+							<li><a href="#" class="tag4"># 감사합니데이</a></li>
+							<li><a href="#" class="tag3"># 기업문화</a></li>
+							<li class="on"><a href="#" class="tag3"># 만도가족</a></li>
+							<li><a href="#" class="tag3"># 자율주행</a></li>
+							<li><a href="#" class="tag4"># 주부아카데미</a></li>
+							<li class="on"><a href="#" class="tag2"># 운곡상</a></li>
+							<li><a href="#" class="tag3"># 사회공헌</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top_btn">
+				<a href="#"><img src="../web/images/common/top.jpg" alt="맨위로"/></a>
+			</div>
+		</div>
+		<!-- 190214 팝업 -->
+		<div class="pop_bg">
+			<div class="m_clise">
+				<a href="#"><img src="../web/images/sub/close.png" alt="닫기"></a>
+			</div>
+		</div>
+		<!-- -->
+	</div>
+	<div id="footer">
+		<div class="foot_btn">
+			<div class="f_site">
+				<ul>
+					<li class="s1"><a href="#"><span>총무포털</span></a></li>
+					<li class="s2"><a href="#"><span>G-HRM</span></a></li>
+					<li class="s3"><a href="#"><span>우리사주조합</span></a></li>
+					<li class="s4"><a href="#"><span>한라그룹 정도경영</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="family">
+				<button type="button"><span>: :  Family Site</span></button>
+			</div>
+			<div class="foot_l">
+				<div class="adder">
+					<ul>
+						<li><a href="../etc/sub01.html"><span>이용약관</span></a></li>
+						<li class="on"><a href="../etc/sub02.html"><span>개인정보처리방침</span> </a></li>
+						<li><a href="../etc/sub03.html"><span>이메일무단수집거부</span></a></li>
+						<li><a href="../etc/sub04.html"><span>사이트맵</span></a></li>
+						<li class="bgx"><a href="../etc/sub05.html"><span>Contac us</span></a></li>
+					</ul>
+					<p>경기도 성남시 분당구 판교로 255번길 21  Tel : 02) 6244-2114, Fax : 02) 6244-2997<span> Copyright ⓒ MANDO Corp. All rights reserved.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="f_menu">
+		<ul>
+			<li class="icon1"><a href="#"><img src="../web/images/common/f_menu1.png" alt="home"/></a></li>
+			<li class="icon2"><a href="#"><img src="../web/images/common/f_menu2.png" alt="만도뉴스"/></a></li>
+			<li class="icon3"><a href="#"><img src="../web/images/common/f_menu3.png" alt="감사합니데이"/></a></li>
+			<li class="icon4"><a href="#"><img src="../web/images/common/f_menu4.png" alt="알림"/></a></li>
+		</ul>
+	</div>
+  </div>
+ </BODY>
+</HTML>
