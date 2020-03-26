@@ -17,97 +17,25 @@
 <meta name="ROBOTS" content="ALL">
 
 <link rel="icon" href="../biznetpia_favicon.ico" type="image/x-icon" />
-<link href="https://www.biznetpia.com/web/css/common.css" rel="stylesheet" type="text/css" />
-<link href="https://www.biznetpia.com/web/css/main.css" rel="stylesheet" type="text/css" />
-<link href="https://www.biznetpia.com/web/css/sub.css" rel="stylesheet" type="text/css" />
-<link href="https://www.biznetpia.com/web/css/tablet.css" rel="stylesheet" type="text/css" />
-<link href="https://www.biznetpia.com/web/css/mobile.css" rel="stylesheet" type="text/css" />
-<link href="https://www.biznetpia.com/web/css/NotoSans.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/sub.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/tablet.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/mobile.css" rel="stylesheet" type="text/css" />
+<link href="http://www.biznetpia.com/web/css/NotoSans.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://www.biznetpia.com/web/js/jquery-ui-1.8.custom.min.js"></script>
-<script type="text/javascript" src="https://www.biznetpia.com/web/js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="https://www.biznetpia.com/web/js/main.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.biznetpia.com/web/js/jquery-ui-1.8.custom.min.js"></script>
+<script type="text/javascript" src="http://www.biznetpia.com/web/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="http://www.biznetpia.com/web/js/main.js"></script>
 
-<script type="text/javascript" src="https://www.biznetpia.com/web/js/util.js"></script>
-<script type="text/javascript" src="https://www.biznetpia.com/web/js/framework.js"></script>
+<script type="text/javascript" src="http://www.biznetpia.com/web/js/util.js"></script>
+<script type="text/javascript" src="http://www.biznetpia.com/web/js/framework.js"></script>
 </head>
 
  <body>
-  
-<script>
-
-function submitForm_project(){
-    if(validateSave_project())
-    {
-        document.frm.submitForm2("download", "/online3/online_pop_2017_proc.php");
-	$(".proj_btn a.btn-more-bl span").text("Loading...");
-	$(".proj_btn a.btn-more-bl").attr("onclick","alert('저장중입니다.');");
-        //openLodingLayer();
-    }
-}
-
-function validateSave_project(){
-	console.log();
-	//if(!document.frm.validate()) return false;
-	if(!frm.validate('project')) return false;
-	var check_pro = false;
-	var to_request = "";
-	for( var i=0; i<= 6; i++)
-	{
-		if($("input:checkbox[id='request_0"+i+"']").is(":checked"))
-		{
-			check_pro = true;
-			if(to_request != "")
-			{
-				to_request = to_request+",";
-			}
-			to_request = to_request + $("#request_0"+i+"").val();
-		}
-	}
-	if(!check_pro)
-	{
-		alert("원하시는 서비스를 선택 해주세요");
-		$("#request_00").focus();
-		return false;
-	}
-
-	if($("#project_price_sp").text()=="프로젝트 예산을 선택해 주세요")
-	{
-		alert("프로젝트 예산을 선택해 주세요");
-		$("#project_price_sp").click();
-		return false;
-	}
-
-	if($("#project_schedule_sp").text()=="프로젝트 일정을 선택해 주세요")
-	{
-		alert("프로젝트 일정을 선택해 주세요");
-		$("#project_schedule_sp").click();
-		return false;
-	}
-
-	if(document.frm.request_07.checked == false){
-		document.frm.request_07.focus();
-		alert("위 개인정보 수집 및 이용에 대한 안내를 숙지하고 동의하셔야 합니다.");
-		return false;
-	}
-
-
-
-	if(!confirm("프로젝트 문의를 하시겠습니까?")) return false;
-
-	document.frm.project_price.value = $("#project_price_sp").text();
-	document.frm.project_schedule.value = $("#project_schedule_sp").text();
-	document.frm.project_service.value = to_request;
-	document.frm.actEvent.value = "online_save";
-	return true;
-}
-
-</script>
-
-
   <div id="wrap">
 	  <div class="pre_data">
 		<div class="pre_data_txt">
@@ -155,10 +83,6 @@ function validateSave_project(){
 		</div>
 	</div>
 <div class="project_area" id="project">
-<script language="javascript">
-var char_min = parseInt();
-var char_max = parseInt();
-</script>
 <form name="frm" enctype="multipart/form-data" action="" method="post" onsubmit="return false;" style="margin:0">
 <input type="hidden" name="actEvent" id="actEvent" value="" />
 <input type="hidden" name="pgmId" id="pgmId" value="" />
@@ -1036,7 +960,6 @@ var char_max = parseInt();
 		</div>
 	</div>
   </div>
-<iframe name="download" style="display:none;"></iframe>
 
  </body>
 </html>
