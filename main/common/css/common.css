@@ -175,6 +175,7 @@ article{height:100%; width:100%; position:relative;}
 .wrap{width:92%;}
 
 .subT{font-size:35px; padding:50px 0;}
+.subT2{padding:50px 0 20px;}
 #bg2.on .wrap:before, #bg3.on .wrap:before{width:90%;}
 .profile .myimg,
 .profile .profileList{float:none; width:90%; margin:0 auto; height:100%;}
@@ -186,7 +187,7 @@ article{height:100%; width:100%; position:relative;}
 #bg3 ul li:first-child{margin:0 0 2% 0;}
 #bg3 ul li .pfbox{height:100%;}
 #bg3 ul li img{width:100%;}
-
+#bg3 .infoTxt{font-size:13px;}
 
 }
 
