@@ -96,6 +96,7 @@ article{height:100%; width:100%; position:relative;}
 .arrow img{width:20px;}
 
 .subT{position:relative; font-size:40px; color:#555; font-family: 'Open Sans', sans-serif; font-weight:700; padding:100px 0 60px; top:20px; opacity:0; text-align:center; transition:1s 0.5s;}
+.subT2{padding:100px 0 20px;}
 .on .subT{opacity:1; transition:1s 0.5s; top:0;}
 #bg2,#bg3{position:relative; height:100% !important;}
 #bg2{position:relative; height:auto !important;}
@@ -118,7 +119,7 @@ article{height:100%; width:100%; position:relative;}
 .profile .profileList dl dd{font-size:14px; line-height:25px;}
 
 #bg3{margin:150px 0;}
-#bg3 ul{overflow:hidden; top:30px; opacity:0; position:relative;}
+#bg3 ul{margin-top:50px; overflow:hidden; top:30px; opacity:0; position:relative;}
 #bg3.on ul{top:0; opacity:1; transition:1.5s 0.6s;}
 #bg3 ul li{float:left;background: #fff;width: 380px;margin: 0 0 26px 30px;/* box-shadow: 0 0 5px #999; */ position:relative; top:20px; opacity:0;}
 #bg3.on ul li:nth-child(1),
