@@ -213,6 +213,7 @@ header .menu.on span:nth-child(3){transform: rotate(-40deg);}
 .wrap{width:92%;}
 
 .subT{font-size:25px; padding:35px 0;}
+.subT2{padding:35px 0 15px;}
 #bg2.on .wrap:before, #bg3.on .wrap:before{width:90%;}
 .profile .myimg,
 .profile .profileList{float:none; width:90%; margin:0 auto; overflow:hidden; height:100%;}
