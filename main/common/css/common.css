@@ -153,7 +153,9 @@ article{height:100%; width:100%; position:relative;}
 #bg3 ul li .pftxt .link a{display:inline-block; width:30%; height:30px; margin-top:20px; background:#fff; border-radius:5px; font-size:14px; color:#555; line-height:30px; }
 #bg3 ul li:hover .pftxt{opacity:1; transition:0.5s;}
 #bg3 button{display:none;}
-#bg3 .infoTxt{text-align:center; font-size:15px; color:#111; line-height:25px;}
+#bg3 .infoTxt{text-align:center; font-size:15px; color:#111; line-height:25px; opacity: 0; transition: 1s 0.5s; margin-top:20px;}
+#bg3.on .infoTxt{margin-top:0; opacity:1;}
+
 
 #footer{background:#1b1d21;}
 .foot{}
